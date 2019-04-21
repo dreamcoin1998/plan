@@ -15,9 +15,7 @@ class Recruitment(models.Model):
     # 学历要求
     ACADEMIC = (
         ('Dazhuan', '大专'),
-        ('Benke', '本科'),
-        ('Shuoshi', '硕士'),
-        ('Boshi', '博士')
+        ('Benke', '本科')
     )
     academic = models.CharField(max_length=20, choices=ACADEMIC, default='Dazhuan', verbose_name='学历要求')
     # 科目要求
@@ -48,7 +46,7 @@ class Recruitment(models.Model):
     # 招聘信息 创建时间
     pub_time = models.DateTimeField(auto_now_add=True, null=True)
     # 招聘是否结束
-    is_stop = models.BooleanField(verbose_name='是否结束', null=True)
+    is_stop = models.BooleanField(verbose_name='是否结束', default=False)
 
 
 
@@ -78,6 +76,8 @@ class Order(models.Model):
     admission_time = models.DateField(verbose_name='入学时间')
     # 是否已付款
     is_payment = models.BooleanField(default=False, verbose_name='是否已经付款')
+    # 是否已经评价
+    is_pingjia = models.BooleanField(default=False, verbose_name='是否已经评价')
     # 商家
     shangjia = models.ForeignKey(Shangjia, on_delete=models.DO_NOTHING, verbose_name='所属商家')
     # 用户

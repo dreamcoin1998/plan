@@ -3,17 +3,12 @@ from math import radians, cos, sin, asin, sqrt
 from evaluation.models import Evaluation
 from api.models import Shangjia
 
-# 商家评价排序
-def zineng(city):
-    zidian = {}
+# 查找商家对应的招聘信息
+def get_xinxi(shangjia):
     data = []
-    # 筛选出本城市内所有的shangjia
-    shangjia = Shangjia.objects.filter(city=city)
     for sj in shangjia:
-        zidian[sj] = sj.score
-    shangjia = sorted(zidian.items(), key=lambda x: x[1], reverse=True)
-    for sj in shangjia:
-        list1 = sj.recruitment_set.all()  # 找出商家所发布的招聘信息
+        print('对象：', sj)
+        list1 = sj[0].recruitment_set.all()  # 找出商家所发布的招聘信息
         for i in list1:
             duixiang = {}
             duixiang['position'] = i.position
@@ -24,9 +19,20 @@ def zineng(city):
             duixiang['price'] = i.price
             duixiang['type'] = i.type
             duixiang['pub_time'] = i.pub_time
-            duixiang['shangjia'] = sj.name
+            duixiang['shangjia'] = sj[0].name
             data.append(duixiang)
-    return duixiang
+    return data
+
+# 商家评分排序
+def pingfen(city):
+    zidian = {}
+    # 筛选出本城市内所有的shangjia
+    shangjia = Shangjia.objects.filter(city=city)
+    # 按照商家评分排序
+    for sj in shangjia:
+        zidian[sj] = sj.score
+    shangjia = sorted(zidian.items(), key=lambda x: x[1], reverse=True)
+    return get_xinxi(shangjia)
 
 # 距离最近算法
 def zuijin(lon1, lat1, lon2, lat2):
@@ -41,13 +47,15 @@ def zuijin(lon1, lat1, lon2, lat2):
 
 
 # 按照地区查找
-def max_star(city):
-    # 筛选出所在地区商家
+def chengshi(city):
     data = []
+    # 筛选出所在地区商家
     shangjia = Shangjia.objects.filter(city=city)
+    print(type(shangjia))
     # 查找对应的招聘信息
     for sj in shangjia:
-        list1 = sj.recruitment_set.all() # 找出商家所发布的招聘信息
+        print('对象：', sj)
+        list1 = sj.recruitment_set.all()  # 找出商家所发布的招聘信息
         for i in list1:
             duixiang = {}
             duixiang['position'] = i.position
@@ -60,7 +68,8 @@ def max_star(city):
             duixiang['pub_time'] = i.pub_time
             duixiang['shangjia'] = sj.name
             data.append(duixiang)
-    return duixiang
+    print(data)
+    return data
 
 #用户自定义排序算法
 def self_make():

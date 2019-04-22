@@ -86,6 +86,10 @@ class Child(models.Model):
     )
     # 年级
     grade = models.CharField(choices=GRADE, verbose_name='年级', blank=True, max_length=12)
+    # 紧急联系人
+    contact_name = models.CharField(max_length=32, verbose_name='紧急联系人', null=True)
+    # 紧急联系电话, 这里后台不做验证，前端验证之后确保无误（同备用联系人电话）
+    contact_phone = models.CharField(max_length=11, verbose_name='紧急联系电话', null=True)
     # 备用联系人
     another_contact_name = models.CharField(max_length=32, blank=True, verbose_name='备用联系人')
     # 备用联系电话

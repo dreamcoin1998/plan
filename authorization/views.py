@@ -30,12 +30,11 @@ def __authorization_by_code(request):
 
     data = c2s(appId, code)
     openid = data.get('openid')
-    print('get openid :', openid)
     if not openid:
         response = CommonResponseMixin.wrap_json_response(code=ReturnCode.FAILED, message="auth failed.")
         return JsonResponse(data=response)
 
-    request.session['open_id']  = openid
+    request.session['open_id'] = openid
     request.session['is_authorized'] = True
 
     if not Yonghu.objects.filter(open_id=openid):

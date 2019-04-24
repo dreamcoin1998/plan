@@ -48,6 +48,9 @@ class Recruitment(models.Model):
     # 招聘是否结束
     is_stop = models.BooleanField(verbose_name='是否结束', default=False)
 
+    def __str__(self):
+        return str(self.pk)
+
 
 
 # 订单类型
@@ -74,10 +77,8 @@ class Order(models.Model):
     price = models.PositiveIntegerField(verbose_name='收费金额')
     # 入学时间
     admission_time = models.DateField(verbose_name='入学时间')
-    # 是否已付款
-    is_payment = models.BooleanField(default=False, verbose_name='是否已经付款')
-    # 是否已经评价
-    is_pingjia = models.BooleanField(default=False, verbose_name='是否已经评价')
+    # 订单状态——未付款、待评价、已完成
+    status = models.CharField(max_length=128, default='未付款')
     # 商家
     shangjia = models.ForeignKey(Shangjia, on_delete=models.DO_NOTHING, verbose_name='所属商家')
     # 用户

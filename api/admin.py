@@ -3,7 +3,7 @@ from .models import Shangjia, Image, Child
 # Register your models here.
 
 class ShangjiaAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'location', 'is_real_time_monitoring', 'is_purchase_insurance', 'is_Verified', 'is_academic_certificate', 'is_Health_certification', 'introduction', 'score')
+    list_display = ('id', 'name', 'location', 'is_real_time_monitoring', 'is_purchase_insurance', 'is_Verified', 'is_academic_certificate', 'is_Health_certification', 'province', 'city', 'score')
     ordering = ('id',)
 
 

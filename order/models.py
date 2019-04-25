@@ -1,11 +1,21 @@
 "招聘信息、订单类型模型类"
-
+from django.contrib.contenttypes.models import ContentType
 from django.db import models
-from api.models import Shangjia
+from api.models import Shangjia, Image
 from authorization.models import Yonghu
+from django.db.models.fields import exceptions
+
+class tupian():
+    def image(self):
+        try:
+            ct = ContentType.objects.get_for_model(self)
+            image = Image.objects.get(content_type=ct, object_id=self.pk)
+            return image.url
+        except exceptions.ObjectDoesNotExist:
+            return 0
 
 # 招聘信息
-class Recruitment(models.Model):
+class Recruitment(models.Model, tupian):
     # 工作职位
     position = models.CharField(max_length=50, verbose_name='职位', null=True)
     # 工作描述

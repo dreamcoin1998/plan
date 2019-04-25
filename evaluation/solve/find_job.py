@@ -1,11 +1,15 @@
 "用于处理找工作函数的排序算法"
 from math import radians, cos, sin, asin, sqrt
 from evaluation.models import Evaluation
-from api.models import Shangjia
+from api.models import Shangjia, Image
+from django.contrib.contenttypes.models import ContentType
+from order.models import Recruitment
+
 
 # 查找商家对应的招聘信息
 def get_xinxi(shangjia):
     data = []
+    image = ContentType.objects.get_for_model(Recruitment)
     for sj in shangjia:
         print('对象：', sj)
         list1 = sj[0].recruitment_set.all()  # 找出商家所发布的招聘信息
@@ -20,6 +24,11 @@ def get_xinxi(shangjia):
             duixiang['type'] = i.type
             duixiang['pub_time'] = i.pub_time
             duixiang['shangjia'] = sj[0].name
+            duixiang['address'] = i.shangjia.province + i.shangjia.city + i.shangjia.location
+            try:
+                duixiang['image'] = Image.objects.filter(content_type=image, object_id=i.id)[0].image.url
+            except:
+                duixiang['image'] = ''
             data.append(duixiang)
     return data
 
@@ -49,6 +58,7 @@ def zuijin(lon1, lat1, lon2, lat2):
 # 按照地区查找
 def chengshi(city):
     data = []
+    image = ContentType.objects.get_for_model(Recruitment)
     # 筛选出所在地区商家
     shangjia = Shangjia.objects.filter(city=city)
     print(type(shangjia))
@@ -67,6 +77,11 @@ def chengshi(city):
             duixiang['type'] = i.type
             duixiang['pub_time'] = i.pub_time
             duixiang['shangjia'] = sj.name
+            duixiang['address'] = i.shangjia.province + i.shangjia.city + i.shangjia.location
+            try:
+                duixiang['image'] = Image.objects.filter(content_type=image, object_id=i.id)[0].image.url
+            except:
+                duixiang['image'] = ''
             data.append(duixiang)
     print(data)
     return data

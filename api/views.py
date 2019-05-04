@@ -48,9 +48,13 @@ class JobView(View, CommonResponseMixin):
         print(imgfile)
         # 如果文件存在
         if os.path.exists(imgfile):
-            data = open(imgfile, 'rb').read()
             # return HttpResponse(data, content_type='image/jpg')
             return FileResponse(open(imgfile, 'rb'), content_type='image/jpg')
         else:
             response = self.wrap_json_response(code=ReturnCode.RESOURCE_NOT_FOUND, message='file is not exists.')
             return JsonResponse(data=response, safe=False)
+
+
+class JobDetails(View, CommonResponseMixin):
+    def get(self, request):
+        pass

@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'hy)fk_m#_saj5zsoq5i-a%6z_o^!d))lgn#3#h788j3l3ne0x1'
 # 微信小程序端生成的 app 密钥
-WX_APP_SECRET = '8ccc43b34b54029a95dc4e2d06b064be'
+WX_APP_SECRET = 'ca38f3c0c5069527ba59959e7a441efc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

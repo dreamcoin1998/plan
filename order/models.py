@@ -22,6 +22,8 @@ class Recruitment(models.Model, tupian):
     description = models.CharField(max_length=256, verbose_name='工作描述', null=True)
     # 工作地点
     work_location = models.CharField(max_length=256, verbose_name='工作地点')
+    # 需求人数
+    peo_num = models.PositiveIntegerField(default=100, verbose_name='人数')
     # 学历要求
     ACADEMIC = (
         ('Dazhuan', '大专'),
@@ -41,6 +43,14 @@ class Recruitment(models.Model, tupian):
         ('Political', '政治')
     )
     subject = models.CharField(max_length=20, choices=SUBJECT, default="Chinese")
+    # 结算方式
+    PAY_METHOD = (
+        ('Day', '日结'),
+        ('Week', '周结'),
+        ('Month', '月结'),
+        ('Term', '学期')
+    )
+    pay_method = models.CharField(max_length=5, choices=PAY_METHOD, default='Month', verbose_name='结算方式')
     # 薪酬
     price = models.PositiveIntegerField(verbose_name='月薪')
     # 工作类型
@@ -50,7 +60,7 @@ class Recruitment(models.Model, tupian):
     )
     type = models.CharField(max_length=20, choices=TYPE, default='工作类型')
     # 求职者——用户
-    user = models.ManyToManyField(Yonghu, related_name='user', blank=True)
+    user = models.ManyToManyField(Yonghu, blank=True)
     # 托管平台
     shangjia = models.ForeignKey(Shangjia, on_delete=models.DO_NOTHING)
     # 招聘信息 创建时间

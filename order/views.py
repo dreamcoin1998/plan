@@ -2,7 +2,7 @@ from django.views import View
 from utils.response import CommonResponseMixin, ReturnCode
 from django.http import JsonResponse
 from api.models import Shangjia, Image
-from evaluation.solve.find_job import get_xinxi, pingfen, chengshi
+from evaluation.solve.find_job import get_xinxi, pingfen, chengshi, pay_chinese
 from .models import Recruitment
 from django.contrib.contenttypes.models import ContentType
 
@@ -12,18 +12,24 @@ def get_sort(shuju):
     image = ContentType.objects.get_for_model(Recruitment)
     for i in shuju:
         duixiang = {}
+        duixiang['id'] = i[0].id
         duixiang['position'] = i[0].position
         duixiang['description'] = i[0].description
         duixiang['work_location'] = i[0].work_location
+        duixiang['renshu'] = i[0].peo_num
         duixiang['academic'] = i[0].academic
         duixiang['subject'] = i[0].subject
-        duixiang['price'] = i[0].price
+        duixiang['price'] = str(i[0].price) + pay_chinese(i[0].pay_method)
         duixiang['type'] = i[0].type
-        duixiang['pub_time'] = i[0].pub_time
+        duixiang['pub_time'] = i[0].pub_time.strftime("%Y-%m-%d")
         duixiang['shangjia'] = i[0].shangjia.name
         duixiang['address'] = i[0].shangjia.province + i[0].shangjia.city + i[0].shangjia.location
         try:
-            duixiang['image'] = Image.objects.filter(content_type=image, object_id=i[0].id)[0].image.url
+            tupian = []
+            tp_duixiang = Image.objects.filter(content_type=image, object_id=i.id)
+            for i in tp_duixiang:
+                tupian.append(i.image.url)
+            duixiang['image'] = tupian
         except:
             duixiang['image'] = ''
         data.append(duixiang)
@@ -164,18 +170,24 @@ class send_job(View, CommonResponseMixin):
             image = ContentType.objects.get_for_model(Recruitment)
             for i in recruitment:
                 duixiang = {}
+                duixiang['id'] = i.id
                 duixiang['position'] = i.position
                 duixiang['description'] = i.description
                 duixiang['work_location'] = i.work_location
+                duixiang['renshu'] = i.peo_num
                 duixiang['academic'] = i.academic
                 duixiang['subject'] = i.subject
-                duixiang['price'] = i.price
+                duixiang['price'] = str(i.price) + pay_chinese(i.pay_method)
                 duixiang['type'] = i.type
-                duixiang['pub_time'] = i.pub_time
+                duixiang['pub_time'] = i.pub_time.strftime("%Y-%m-%d")
                 duixiang['shangjia'] = i.shangjia.name
                 duixiang['address'] = i.shangjia.province + i.shangjia.city + i.shangjia.location
                 try:
-                    duixiang['image'] = Image.objects.filter(content_type=image, object_id=i.id)[0].image.url
+                    tupian = []
+                    tp_duixiang = Image.objects.filter(content_type=image, object_id=i.id)
+                    for i in tp_duixiang:
+                        tupian.append(i.image.url)
+                    duixiang['image'] = tupian
                 except:
                     duixiang['image'] = ''
                 data.append(duixiang)
@@ -185,3 +197,25 @@ class send_job(View, CommonResponseMixin):
         # 发送用户请求的数据
         response = self.wrap_json_response(code=ReturnCode.SUCCESS, message='fail.')
         return JsonResponse(data=response)
+
+
+# 招聘信息详情页获取商家信息
+class GetXinxi(View, CommonResponseMixin):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        data = request.body.decode("utf-8")
+        data = eval(data)
+
+        xinxi_id = data.get('xinxi_id')
+        recruitment = Recruitment.objects.get(id=xinxi_id)
+        shangjia = recruitment.shangjia
+
+        duixiang = {}
+        duixiang['name'] = shangjia.name
+        duixiang['introduction'] = shangjia.introduction
+        duixiang['address'] = shangjia.province + shangjia.city + shangjia.location
+
+        data = self.wrap_json_response(data=duixiang, code=ReturnCode.SUCCESS, message='shangjia success.')
+        return JsonResponse(data, safe=False)

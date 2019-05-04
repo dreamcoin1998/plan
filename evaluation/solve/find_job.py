@@ -5,6 +5,16 @@ from api.models import Shangjia, Image
 from django.contrib.contenttypes.models import ContentType
 from order.models import Recruitment
 
+# 结算方式
+def pay_chinese(English):
+    if English == 'Day':
+        return '/天'
+    elif English == 'Week':
+        return '/周'
+    elif English == 'Month':
+        return '/月'
+    elif English == 'Term':
+        return '/学期'
 
 # 查找商家对应的招聘信息
 def get_xinxi(shangjia):
@@ -15,18 +25,24 @@ def get_xinxi(shangjia):
         list1 = sj[0].recruitment_set.all()  # 找出商家所发布的招聘信息
         for i in list1:
             duixiang = {}
+            duixiang['id'] = i.id
             duixiang['position'] = i.position
             duixiang['description'] = i.description
             duixiang['work_location'] = i.work_location
+            duixiang['renshu'] = i.peo_num
             duixiang['academic'] = i.academic
             duixiang['subject'] = i.subject
-            duixiang['price'] = i.price
+            duixiang['price'] = str(i.price) + pay_chinese(i.pay_method)
             duixiang['type'] = i.type
-            duixiang['pub_time'] = i.pub_time
+            duixiang['pub_time'] = i.pub_time.strftime("%Y-%m-%d")
             duixiang['shangjia'] = sj[0].name
             duixiang['address'] = i.shangjia.province + i.shangjia.city + i.shangjia.location
             try:
-                duixiang['image'] = Image.objects.filter(content_type=image, object_id=i.id)[0].image.url
+                tupian = []
+                tp_duixiang = Image.objects.filter(content_type=image, object_id=i.id)
+                for i in tp_duixiang:
+                    tupian.append(i.image.url)
+                duixiang['image'] = tupian
             except:
                 duixiang['image'] = ''
             data.append(duixiang)
@@ -68,18 +84,24 @@ def chengshi(city):
         list1 = sj.recruitment_set.all()  # 找出商家所发布的招聘信息
         for i in list1:
             duixiang = {}
+            duixiang['id'] = i.id
             duixiang['position'] = i.position
             duixiang['description'] = i.description
             duixiang['work_location'] = i.work_location
+            duixiang['renshu'] = i.peo_num
             duixiang['academic'] = i.academic
             duixiang['subject'] = i.subject
-            duixiang['price'] = i.price
+            duixiang['price'] = str(i.price) + pay_chinese(i.pay_method)
             duixiang['type'] = i.type
-            duixiang['pub_time'] = i.pub_time
+            duixiang['pub_time'] = i.pub_time.strftime("%Y-%m-%d")
             duixiang['shangjia'] = sj.name
             duixiang['address'] = i.shangjia.province + i.shangjia.city + i.shangjia.location
             try:
-                duixiang['image'] = Image.objects.filter(content_type=image, object_id=i.id)[0].image.url
+                tupian = []
+                tp_duixiang = Image.objects.filter(content_type=image, object_id=i.id)
+                for i in tp_duixiang:
+                    tupian.append(i.image.url)
+                duixiang['image'] = tupian
             except:
                 duixiang['image'] = ''
             data.append(duixiang)

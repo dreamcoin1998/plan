@@ -1,0 +1,15 @@
+{'latitude': 23, 'longitude': 113}
+[pid: 15156|app: 0|req: 509/877] 127.0.0.1 () {40 vars in 751 bytes} [Mon May  6 11:04:49 2019] POST /api/v1.0/server/location => generated 48 bytes in 1 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+/home/ubuntu/plan/resource/images/guanshu.jpg
+[pid: 15158|app: 0|req: 200/878] 127.0.0.1 () {30 vars in 595 bytes} [Mon May  6 11:04:50 2019] GET /api/v1.0/server/image?md5=guanshu => generated 47687 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/shequn.jpg
+[pid: 15156|app: 0|req: 510/879] 127.0.0.1 () {30 vars in 593 bytes} [Mon May  6 11:04:50 2019] GET /api/v1.0/server/image?md5=shequn => generated 11006 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/haotuoguan.jpg
+[pid: 15156|app: 0|req: 511/880] 127.0.0.1 () {30 vars in 601 bytes} [Mon May  6 11:04:50 2019] GET /api/v1.0/server/image?md5=haotuoguan => generated 38702 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/bianxing.jpg
+[pid: 15156|app: 0|req: 512/881] 127.0.0.1 () {30 vars in 597 bytes} [Mon May  6 11:04:50 2019] GET /api/v1.0/server/image?md5=bianxing => generated 47985 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/shejiao.jpg
+[pid: 15158|app: 0|req: 201/882] 127.0.0.1 () {30 vars in 595 bytes} [Mon May  6 11:04:50 2019] GET /api/v1.0/server/image?md5=shejiao => generated 63437 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/xingqu.jpg
+[pid: 15157|app: 0|req: 105/883] 127.0.0.1 () {30 vars in 593 bytes} [Mon May  6 11:04:50 2019] GET /api/v1.0/server/image?md5=xingqu => generated 40323 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Mon May  6 11:04:51 2019 - logsize: 2012, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557111891...

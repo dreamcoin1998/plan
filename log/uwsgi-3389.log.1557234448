@@ -1,0 +1,14 @@
+城市： 
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15158|app: 0|req: 328/1417] 127.0.0.1 () {32 vars in 785 bytes} [Tue May  7 21:07:21 2019] GET /api/v1.0/server/getjob?sort=city&city=&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 4 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+城市： 衡阳市
+<class 'django.db.models.query.QuerySet'>
+对象： 南华大学联合托管委员会
+对象： 青草教育中心
+对象： 艺术培训学校
+对象： 浙大博渊传播有限公司
+[{'id': 4, 'position': '兼职老师', 'description': '英语特长优先，联系电话：18229299026（王老师）', 'work_location': '蒸湘区联合街道北塘村6组', 'renshu': 100, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '800/月', 'type': 'Full_Time', 'pub_time': '2019-04-20', 'shangjia': '青草教育中心', 'address': '湖南省衡阳市蒸湘区联合街道北塘村6组', 'image': ['photos/2019/04/26/qixin.jpg']}, {'id': 3, 'position': '地推兼职', 'description': '男女不限，做事细心，必须大胆，敢于跟家长聊天，索要电话号码。执行力强，严肃拒绝混日子的，不认真的，做得好可以考虑长期兼职。工作时间：下午3点到6点。工作内容：地推收集电话名单（幼儿园、小学门口）', 'work_location': '立新水映豪庭 （红湘路）', 'renshu': 4, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '3000/月', 'type': 'Part_Time', 'pub_time': '2019-04-19', 'shangjia': '艺术培训学校', 'address': '湖南省衡阳市立新水映豪庭 （红湘路）', 'image': ['photos/2019/04/26/xiangrikui.jpg']}, {'id': 2, 'position': '博渊传播有限公司', 'description': 'A.负责学生的思想政治工作及教学工作 B.监管学生学习和答疑 D.每日统计好学生学习数据 C.每周定期向班主任，学生家长反馈学生学习情况。                       工作时间：下午2:30到晚自习，不超过5小时工作时间。 工作地点：田家炳实验中学，衡阳市一中，衡阳市八中，铁一中，等衡阳区域学校内。', 'work_location': '湖南省衡阳市浙大博渊传播有限公司湖南分公司', 'renshu': 100, 'academic': 'Benke', 'subject': 'Math', 'price': '2000/月', 'type': 'Full_Time', 'pub_time': '2019-04-19', 'shangjia': '浙大博渊传播有限公司', 'address': '湖南省衡阳市浙大博渊传播有限公司湖南分公司', 'image': ['photos/2019/04/26/qiyoutuo.jpg']}]
+[pid: 15156|app: 0|req: 798/1418] 127.0.0.1 () {32 vars in 839 bytes} [Tue May  7 21:07:27 2019] GET /api/v1.0/server/getjob?sort=city&city=%E8%A1%A1%E9%98%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 3126 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+./static/upload/photos/2019/04/26/qixin.jpg
+Tue May  7 21:07:28 2019 - logsize: 2829, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557234448...

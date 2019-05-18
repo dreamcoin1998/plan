@@ -1,0 +1,17 @@
+./static/upload/photos/2019/05/06/logo.jpg
+[pid: 15156|app: 0|req: 1160/1950] 127.0.0.1 () {28 vars in 650 bytes} [Thu May  9 21:10:33 2019] GET /api/v1.0/server/job?md5=photos/2019/05/06/logo.jpg => generated 10757 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/04/26/xiangrikui.jpg
+[pid: 15156|app: 0|req: 1161/1951] 127.0.0.1 () {36 vars in 889 bytes} [Thu May  9 21:10:33 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15158|app: 0|req: 450/1952] 127.0.0.1 () {36 vars in 839 bytes} [Thu May  9 21:10:33 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan1.jpg
+[pid: 15156|app: 0|req: 1162/1953] 127.0.0.1 () {36 vars in 853 bytes} [Thu May  9 21:10:49 2019] GET /api/v1.0/server/image?md5=zhaotuoguan1 => generated 225450 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan2.jpg
+[pid: 15158|app: 0|req: 451/1954] 127.0.0.1 () {36 vars in 853 bytes} [Thu May  9 21:10:49 2019] GET /api/v1.0/server/image?md5=zhaotuoguan2 => generated 278035 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan3.jpg
+[pid: 15156|app: 0|req: 1163/1955] 127.0.0.1 () {36 vars in 853 bytes} [Thu May  9 21:10:49 2019] GET /api/v1.0/server/image?md5=zhaotuoguan3 => generated 257972 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15156|app: 0|req: 1164/1956] 127.0.0.1 () {36 vars in 839 bytes} [Thu May  9 21:10:49 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/denglu.jpg
+[pid: 15158|app: 0|req: 452/1957] 127.0.0.1 () {36 vars in 841 bytes} [Thu May  9 21:10:49 2019] GET /api/v1.0/server/image?md5=denglu => generated 20259 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Thu May  9 21:10:50 2019 - logsize: 2412, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557407450...

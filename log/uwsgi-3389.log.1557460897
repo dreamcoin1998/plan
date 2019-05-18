@@ -1,0 +1,13 @@
+{'latitude': 22.541578, 'longitude': 113.952534}
+[pid: 15156|app: 0|req: 2414/3659] 127.0.0.1 () {34 vars in 710 bytes} [Fri May 10 12:01:19 2019] POST /api/v1.0/server/location => generated 48 bytes in 1 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan2.jpg
+[pid: 15156|app: 0|req: 2415/3660] 127.0.0.1 () {34 vars in 857 bytes} [Fri May 10 12:01:36 2019] GET /api/v1.0/server/image?md5=zhaotuoguan2 => generated 278035 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan1.jpg
+[pid: 15158|app: 0|req: 779/3661] 127.0.0.1 () {34 vars in 857 bytes} [Fri May 10 12:01:36 2019] GET /api/v1.0/server/image?md5=zhaotuoguan1 => generated 225450 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan3.jpg
+[pid: 15156|app: 0|req: 2416/3662] 127.0.0.1 () {34 vars in 857 bytes} [Fri May 10 12:01:36 2019] GET /api/v1.0/server/image?md5=zhaotuoguan3 => generated 257972 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/tubiao.jpg
+[pid: 15156|app: 0|req: 2417/3663] 127.0.0.1 () {34 vars in 845 bytes} [Fri May 10 12:01:36 2019] GET /api/v1.0/server/image?md5=tubiao => generated 11507 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15158|app: 0|req: 780/3664] 127.0.0.1 () {34 vars in 843 bytes} [Fri May 10 12:01:36 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Fri May 10 12:01:37 2019 - logsize: 1767, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557460897...

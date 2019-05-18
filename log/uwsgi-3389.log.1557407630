@@ -1,0 +1,13 @@
+城市： 
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15156|app: 0|req: 1168/1963] 127.0.0.1 () {44 vars in 939 bytes} [Thu May  9 21:12:47 2019] GET /api/v1.0/server/getjob?sort=city&city=&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+城市： 
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15158|app: 0|req: 455/1964] 127.0.0.1 () {44 vars in 939 bytes} [Thu May  9 21:12:50 2019] GET /api/v1.0/server/getjob?sort=city&city=&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 4 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+./static/upload/photos/2019/05/06/logo.jpg
+[pid: 15157|app: 0|req: 207/1965] 127.0.0.1 () {28 vars in 650 bytes} [Thu May  9 21:13:49 2019] GET /api/v1.0/server/job?md5=photos/2019/05/06/logo.jpg => generated 10757 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/04/26/xiangrikui.jpg
+[pid: 15159|app: 0|req: 136/1966] 127.0.0.1 () {36 vars in 889 bytes} [Thu May  9 21:13:49 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Thu May  9 21:13:50 2019 - logsize: 1273, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557407630...

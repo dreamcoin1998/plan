@@ -1,0 +1,45 @@
+[pid: 15157|app: 0|req: 221/2248] 127.0.0.1 () {36 vars in 865 bytes} [Thu May  9 23:36:35 2019] GET /admin/authorization/yonghu/1/delete/ => generated 3387 bytes in 24 msecs (HTTP/1.0 200) 7 headers in 381 bytes (1 switches on core 0)
+Internal Server Error: /admin/authorization/yonghu/1/delete/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+sqlite3.IntegrityError: FOREIGN KEY constraint failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/admin/options.py", line 575, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/admin/sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 62, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 58, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/admin/options.py", line 1736, in delete_view
+    return self._delete_view(request, object_id, extra_context)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/transaction.py", line 212, in __exit__
+    connection.commit()
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/base/base.py", line 261, in commit
+    self._commit()
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+  File "/usr/local/lib/python3.6/dist-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/base/base.py", line 239, in _commit
+    return self.connection.commit()
+django.db.utils.IntegrityError: FOREIGN KEY constraint failed
+[pid: 15156|app: 0|req: 1377/2249] 127.0.0.1 () {44 vars in 1003 bytes} [Thu May  9 23:36:36 2019] POST /admin/authorization/yonghu/1/delete/ => generated 116832 bytes in 57 msecs (HTTP/1.0 500) 5 headers in 342 bytes (1 switches on core 0)
+Thu May  9 23:36:37 2019 - logsize: 3332, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557416197...

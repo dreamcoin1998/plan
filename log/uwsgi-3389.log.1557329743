@@ -1,0 +1,13 @@
+b'{"salary":"2","sort":"filter"}' 成功接受请求
+{"salary":"2","sort":"filter"} 成功解码
+{'salary': '2', 'sort': 'filter'} 成功
+[pid: 15156|app: 0|req: 1026/1769] 127.0.0.1 () {34 vars in 710 bytes} [Wed May  8 23:35:24 2019] POST /api/v1.0/server/getjob => generated 3126 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+b'{"salary":"3","sort":"filter"}' 成功接受请求
+{"salary":"3","sort":"filter"} 成功解码
+{'salary': '3', 'sort': 'filter'} 成功
+[pid: 15158|app: 0|req: 414/1770] 127.0.0.1 () {34 vars in 710 bytes} [Wed May  8 23:35:30 2019] POST /api/v1.0/server/getjob => generated 2513 bytes in 12 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+b'{"salary":"3","sort":"filter"}' 成功接受请求
+{"salary":"3","sort":"filter"} 成功解码
+{'salary': '3', 'sort': 'filter'} 成功
+[pid: 15156|app: 0|req: 1027/1771] 127.0.0.1 () {34 vars in 710 bytes} [Wed May  8 23:35:42 2019] POST /api/v1.0/server/getjob => generated 2513 bytes in 10 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+Wed May  8 23:35:43 2019 - logsize: 1085, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557329743...

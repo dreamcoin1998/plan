@@ -1,0 +1,16 @@
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+Not Found: /
+[pid: 15156|app: 0|req: 893/1585] 127.0.0.1 () {28 vars in 308 bytes} [Wed May  8 05:49:59 2019] GET / => generated 2019 bytes in 3 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 15156|app: 0|req: 894/1586] 127.0.0.1 () {22 vars in 222 bytes} [Wed May  8 08:14:47 2019] GET / => generated 2019 bytes in 2 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 15158|app: 0|req: 377/1587] 127.0.0.1 () {30 vars in 505 bytes} [Wed May  8 08:14:47 2019] GET / => generated 2019 bytes in 3 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Wed May  8 08:14:48 2019 - logsize: 1320, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557274488...

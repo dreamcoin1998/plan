@@ -1,0 +1,6 @@
+[pid: 15157|app: 0|req: 349/4370] 127.0.0.1 () {36 vars in 786 bytes} [Fri May 10 20:44:02 2019] GET /admin/ => generated 10138 bytes in 26 msecs (HTTP/1.0 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2909/4371] 127.0.0.1 () {36 vars in 817 bytes} [Fri May 10 20:44:03 2019] GET /admin/authorization/yonghu/ => generated 10024 bytes in 64 msecs (HTTP/1.0 200) 7 headers in 382 bytes (1 switches on core 0)
+[pid: 15158|app: 0|req: 933/4372] 127.0.0.1 () {34 vars in 693 bytes} [Fri May 10 20:44:03 2019] GET /admin/jsi18n/ => generated 7684 bytes in 6 msecs (HTTP/1.0 200) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2910/4373] 127.0.0.1 () {36 vars in 796 bytes} [Fri May 10 20:44:14 2019] GET /admin/ => generated 10138 bytes in 28 msecs (HTTP/1.0 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 15158|app: 0|req: 934/4374] 127.0.0.1 () {36 vars in 817 bytes} [Fri May 10 20:44:17 2019] GET /admin/authorization/yonghu/ => generated 10024 bytes in 71 msecs (HTTP/1.0 200) 7 headers in 382 bytes (1 switches on core 0)
+Fri May 10 20:44:17 2019 - logsize: 1084, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557492257...

@@ -1,0 +1,15 @@
+城市： 深圳市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15156|app: 0|req: 2261/3453] 127.0.0.1 () {32 vars in 826 bytes} [Fri May 10 11:36:18 2019] GET /api/v1.0/server/getjob?sort=city&city=%E6%B7%B1%E5%9C%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+{'session_key': '1O4o20Oib2c3GngYXY5x0g==', 'openid': 'oqpd45PeNp95E-0Md2cRq_emcvbs'}
+new user: openid: oqpd45PeNp95E-0Md2cRq_emcvbs, nickName: 大彭
+[pid: 15158|app: 0|req: 742/3454] 127.0.0.1 () {34 vars in 700 bytes} [Fri May 10 11:36:25 2019] POST /api/v1.0/server/auth => generated 45 bytes in 239 msecs (HTTP/1.0 200) 5 headers in 245 bytes (1 switches on core 0)
+b'{"latitude":22.54713,"longitude":113.938667,"sort":"near","city":"\xe6\xb7\xb1\xe5\x9c\xb3\xe5\xb8\x82"}' 成功接受请求
+{"latitude":22.54713,"longitude":113.938667,"sort":"near","city":"深圳市"} 成功解码
+{'latitude': 22.54713, 'longitude': 113.938667, 'sort': 'near', 'city': '深圳市'} 成功
+城市： 深圳市
+[]
+距离最近 []
+[pid: 15156|app: 0|req: 2262/3455] 127.0.0.1 () {34 vars in 698 bytes} [Fri May 10 11:36:27 2019] POST /api/v1.0/server/getjob => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+Fri May 10 11:36:28 2019 - logsize: 1301, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557459388...

@@ -1,0 +1,6 @@
+[pid: 15158|app: 0|req: 928/4359] 127.0.0.1 () {34 vars in 866 bytes} [Fri May 10 20:43:04 2019] GET /favicon.ico => generated 2070 bytes in 3 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2904/4360] 127.0.0.1 () {32 vars in 550 bytes} [Fri May 10 20:43:30 2019] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.0 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 15158|app: 0|req: 929/4361] 127.0.0.1 () {32 vars in 587 bytes} [Fri May 10 20:43:30 2019] GET /admin/login/?next=/admin/ => generated 1857 bytes in 18 msecs (HTTP/1.0 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2905/4362] 127.0.0.1 () {32 vars in 520 bytes} [Fri May 10 20:43:30 2019] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.0 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 15157|app: 0|req: 348/4363] 127.0.0.1 () {32 vars in 557 bytes} [Fri May 10 20:43:30 2019] GET /admin/login/?next=/admin/ => generated 1857 bytes in 12 msecs (HTTP/1.0 200) 7 headers in 381 bytes (1 switches on core 0)
+Fri May 10 20:43:31 2019 - logsize: 1066, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557492211...

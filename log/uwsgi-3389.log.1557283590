@@ -1,0 +1,13 @@
+Not Found: /
+[pid: 15156|app: 0|req: 896/1592] 127.0.0.1 () {22 vars in 222 bytes} [Wed May  8 08:27:19 2019] GET / => generated 2019 bytes in 3 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 15156|app: 0|req: 897/1593] 127.0.0.1 () {22 vars in 226 bytes} [Wed May  8 08:27:26 2019] OPTIONS / => generated 2023 bytes in 3 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /nice ports,/Trinity.txt.bak
+[pid: 15158|app: 0|req: 379/1594] 127.0.0.1 () {22 vars in 284 bytes} [Wed May  8 08:27:35 2019] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 2120 bytes in 3 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 15156|app: 0|req: 898/1595] 127.0.0.1 () {28 vars in 308 bytes} [Wed May  8 08:28:04 2019] GET / => generated 2019 bytes in 4 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+./static/upload/photos/2019/04/26/xiangrikui.jpg
+[pid: 15156|app: 0|req: 899/1596] 127.0.0.1 () {34 vars in 900 bytes} [Wed May  8 10:46:29 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/05/06/logo.jpg
+[pid: 15156|app: 0|req: 900/1597] 127.0.0.1 () {28 vars in 693 bytes} [Wed May  8 10:46:29 2019] GET /api/v1.0/server/job?md5=photos/2019/05/06/logo.jpg => generated 10757 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Wed May  8 10:46:30 2019 - logsize: 1540, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557283590...

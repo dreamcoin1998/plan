@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/wsgi.py", line 145, in __call__
+    request = self.request_class(environ)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/wsgi.py", line 86, in __init__
+    self.method = environ['REQUEST_METHOD'].upper()
+KeyError: 'REQUEST_METHOD'
+[pid: 15158|app: 0|req: 378/1588] 104.152.52.71 () {8 vars in 90 bytes} [Wed May  8 08:27:16 2019]   => generated 0 bytes in 186 msecs ( 500) 0 headers in 0 bytes (0 switches on core 0)
+Not Found: /
+[pid: 15156|app: 0|req: 895/1589] 104.152.52.71 () {18 vars in 184 bytes} [Wed May  8 08:27:17 2019] GET / => generated 2032 bytes in 3 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 15157|app: 0|req: 189/1590] 104.152.52.71 () {18 vars in 188 bytes} [Wed May  8 08:27:17 2019] OPTIONS / => generated 2036 bytes in 3 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+[pid: 15159|app: 0|req: 129/1591] 104.152.52.71 () {18 vars in 188 bytes} [Wed May  8 08:27:18 2019] OPTIONS / => generated 2036 bytes in 3 msecs (RTSP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Wed May  8 08:27:19 2019 - logsize: 1197, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557275239...

@@ -1,0 +1,14 @@
+{'latitude': 22.5441, 'longitude': 114.10592}
+[pid: 15156|app: 0|req: 2557/3851] 127.0.0.1 () {34 vars in 717 bytes} [Fri May 10 12:38:41 2019] POST /api/v1.0/server/location => generated 48 bytes in 1 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+城市： 深圳市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15156|app: 0|req: 2558/3852] 127.0.0.1 () {32 vars in 841 bytes} [Fri May 10 12:38:47 2019] GET /api/v1.0/server/getjob?sort=city&city=%E6%B7%B1%E5%9C%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+b'{"latitude":22.5441,"longitude":114.10592,"sort":"near","city":"\xe6\xb7\xb1\xe5\x9c\xb3\xe5\xb8\x82"}' 成功接受请求
+{"latitude":22.5441,"longitude":114.10592,"sort":"near","city":"深圳市"} 成功解码
+{'latitude': 22.5441, 'longitude': 114.10592, 'sort': 'near', 'city': '深圳市'} 成功
+城市： 深圳市
+[]
+距离最近 []
+[pid: 15158|app: 0|req: 819/3853] 127.0.0.1 () {34 vars in 713 bytes} [Fri May 10 12:38:51 2019] POST /api/v1.0/server/getjob => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+Fri May 10 12:38:52 2019 - logsize: 1192, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557463132...

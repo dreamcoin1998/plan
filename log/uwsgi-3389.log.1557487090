@@ -1,0 +1,9 @@
+/home/ubuntu/plan/resource/images/zhaotuoguan1.jpg
+[pid: 15156|app: 0|req: 2773/4155] 127.0.0.1 () {36 vars in 853 bytes} [Fri May 10 19:18:09 2019] GET /api/v1.0/server/image?md5=zhaotuoguan1 => generated 225450 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan2.jpg
+[pid: 15156|app: 0|req: 2774/4156] 127.0.0.1 () {36 vars in 853 bytes} [Fri May 10 19:18:09 2019] GET /api/v1.0/server/image?md5=zhaotuoguan2 => generated 278035 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan3.jpg
+[pid: 15158|app: 0|req: 880/4157] 127.0.0.1 () {36 vars in 853 bytes} [Fri May 10 19:18:09 2019] GET /api/v1.0/server/image?md5=zhaotuoguan3 => generated 257972 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/denglu.jpg
+[pid: 15156|app: 0|req: 2775/4158] 127.0.0.1 () {36 vars in 841 bytes} [Fri May 10 19:18:09 2019] GET /api/v1.0/server/image?md5=denglu => generated 20259 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Fri May 10 19:18:10 2019 - logsize: 1206, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557487090...

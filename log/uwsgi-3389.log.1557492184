@@ -1,0 +1,8 @@
+[pid: 15158|app: 0|req: 926/4353] 127.0.0.1 () {42 vars in 950 bytes} [Fri May 10 20:41:54 2019] GET /admin/password_change/done/ => generated 1362 bytes in 15 msecs (HTTP/1.0 200) 4 headers in 124 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2901/4354] 127.0.0.1 () {36 vars in 796 bytes} [Fri May 10 20:42:00 2019] GET /admin/ => generated 10138 bytes in 28 msecs (HTTP/1.0 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 15158|app: 0|req: 927/4355] 127.0.0.1 () {26 vars in 292 bytes} [Fri May 10 20:42:55 2019] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.0 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 15157|app: 0|req: 347/4356] 127.0.0.1 () {26 vars in 329 bytes} [Fri May 10 20:42:56 2019] GET /admin/login/?next=/admin/ => generated 1857 bytes in 13 msecs (HTTP/1.0 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2902/4357] 127.0.0.1 () {32 vars in 795 bytes} [Fri May 10 20:43:03 2019] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.0 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2903/4358] 127.0.0.1 () {32 vars in 832 bytes} [Fri May 10 20:43:03 2019] GET /admin/login/?next=/admin/ => generated 1857 bytes in 13 msecs (HTTP/1.0 200) 7 headers in 381 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+Fri May 10 20:43:04 2019 - logsize: 1315, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557492184...

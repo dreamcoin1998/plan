@@ -1,0 +1,6 @@
+[pid: 15156|app: 0|req: 2977/4480] 127.0.0.1 () {30 vars in 525 bytes} [Sat May 11 16:58:47 2019] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.0 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2978/4481] 127.0.0.1 () {32 vars in 571 bytes} [Sat May 11 16:58:48 2019] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.0 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2979/4482] 127.0.0.1 () {32 vars in 609 bytes} [Sat May 11 16:58:48 2019] GET /admin/login/?next=/admin/ => generated 1857 bytes in 15 msecs (HTTP/1.0 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2980/4483] 127.0.0.1 () {30 vars in 525 bytes} [Sat May 11 17:46:21 2019] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.0 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 2981/4484] 127.0.0.1 () {30 vars in 562 bytes} [Sat May 11 17:46:22 2019] GET /admin/login/?next=/admin/ => generated 1857 bytes in 13 msecs (HTTP/1.0 200) 7 headers in 381 bytes (1 switches on core 0)
+Sat May 11 17:46:22 2019 - logsize: 1060, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557567982...

@@ -1,0 +1,16 @@
+城市： 深圳市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15156|app: 0|req: 2418/3665] 127.0.0.1 () {32 vars in 834 bytes} [Fri May 10 12:01:41 2019] GET /api/v1.0/server/getjob?sort=city&city=%E6%B7%B1%E5%9C%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+b'{"latitude":22.541578,"longitude":113.952534,"sort":"near","city":"\xe6\xb7\xb1\xe5\x9c\xb3\xe5\xb8\x82"}' 成功接受请求
+{"latitude":22.541578,"longitude":113.952534,"sort":"near","city":"深圳市"} 成功解码
+{'latitude': 22.541578, 'longitude': 113.952534, 'sort': 'near', 'city': '深圳市'} 成功
+城市： 深圳市
+[]
+距离最近 []
+[pid: 15158|app: 0|req: 781/3666] 127.0.0.1 () {34 vars in 706 bytes} [Fri May 10 12:01:46 2019] POST /api/v1.0/server/getjob => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+城市： 深圳市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15157|app: 0|req: 302/3667] 127.0.0.1 () {32 vars in 834 bytes} [Fri May 10 12:01:58 2019] GET /api/v1.0/server/getjob?sort=city&city=%E6%B7%B1%E5%9C%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+Fri May 10 12:01:59 2019 - logsize: 1291, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557460919...

@@ -1,0 +1,8 @@
+{'latitude': 23.129163, 'longitude': 113.264435}
+[pid: 15158|app: 0|req: 920/4339] 127.0.0.1 () {40 vars in 779 bytes} [Fri May 10 20:33:59 2019] POST /api/v1.0/server/location => generated 48 bytes in 0 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+Not Found: /api/v1.0/server/shouye
+[pid: 15156|app: 0|req: 2894/4340] 127.0.0.1 () {36 vars in 717 bytes} [Fri May 10 20:33:59 2019] GET /api/v1.0/server/shouye => generated 3449 bytes in 5 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+./static/upload/photos/2019/04/26/xiangrikui.jpg
+[pid: 15158|app: 0|req: 921/4341] 127.0.0.1 () {30 vars in 746 bytes} [Fri May 10 20:33:59 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+[pid: 15156|app: 0|req: 2895/4342] 127.0.0.1 () {36 vars in 754 bytes} [Fri May 10 20:40:16 2019] GET /admin/ => generated 10138 bytes in 23 msecs (HTTP/1.0 200) 6 headers in 228 bytes (1 switches on core 0)
+Fri May 10 20:40:17 2019 - logsize: 1055, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557492017...

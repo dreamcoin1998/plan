@@ -1,0 +1,7 @@
+[pid: 15158|app: 0|req: 175/763] 127.0.0.1 () {48 vars in 906 bytes} [Mon May  6 00:58:12 2019] POST /api/v1.0/server/location => generated 48 bytes in 1 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+{'session_key': 'HwQ1j7ThWmWHF751Y4XMHQ==', 'openid': 'oqpd45ARVLmFwJBYViXKHUbN3A_Q'}
+new user: openid: oqpd45ARVLmFwJBYViXKHUbN3A_Q, nickName: 冬阳、青春
+[pid: 15159|app: 0|req: 56/764] 127.0.0.1 () {48 vars in 899 bytes} [Mon May  6 00:58:17 2019] POST /api/v1.0/server/auth => generated 45 bytes in 200 msecs (HTTP/1.0 200) 5 headers in 245 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 447/765] 127.0.0.1 () {36 vars in 793 bytes} [Mon May  6 00:58:26 2019] GET /admin/ => generated 10133 bytes in 29 msecs (HTTP/1.0 200) 6 headers in 228 bytes (1 switches on core 0)
+[pid: 15158|app: 0|req: 176/766] 127.0.0.1 () {36 vars in 817 bytes} [Mon May  6 00:58:29 2019] GET /admin/authorization/yonghu/ => generated 5385 bytes in 42 msecs (HTTP/1.0 200) 7 headers in 381 bytes (1 switches on core 0)
+Mon May  6 00:58:29 2019 - logsize: 1031, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557075509...

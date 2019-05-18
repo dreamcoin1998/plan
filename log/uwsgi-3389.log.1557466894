@@ -1,0 +1,12 @@
+{'latitude': 22.54165267944336, 'longitude': 113.95285034179688}
+[pid: 15156|app: 0|req: 2639/3958] 127.0.0.1 () {36 vars in 678 bytes} [Fri May 10 13:40:58 2019] POST /api/v1.0/server/location => generated 48 bytes in 1 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+城市： 深圳市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15156|app: 0|req: 2640/3959] 127.0.0.1 () {34 vars in 802 bytes} [Fri May 10 13:41:22 2019] GET /api/v1.0/server/getjob?sort=city&city=%E6%B7%B1%E5%9C%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+城市： 深圳市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15158|app: 0|req: 837/3960] 127.0.0.1 () {34 vars in 802 bytes} [Fri May 10 13:41:27 2019] GET /api/v1.0/server/getjob?sort=city&city=%E6%B7%B1%E5%9C%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+/home/ubuntu/plan/resource/images/shequn.jpg
+Fri May 10 13:41:34 2019 - logsize: 1052, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557466894...

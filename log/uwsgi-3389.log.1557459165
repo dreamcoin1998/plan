@@ -1,0 +1,11 @@
+/home/ubuntu/plan/resource/images/denglu.jpg
+[pid: 15156|app: 0|req: 2185/3351] 127.0.0.1 () {32 vars in 698 bytes} [Fri May 10 11:32:29 2019] GET /api/v1.0/server/image?md5=denglu => generated 20259 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15156|app: 0|req: 2186/3352] 127.0.0.1 () {32 vars in 696 bytes} [Fri May 10 11:32:37 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/kecheng.jpg
+[pid: 15156|app: 0|req: 2187/3353] 127.0.0.1 () {32 vars in 700 bytes} [Fri May 10 11:32:37 2019] GET /api/v1.0/server/image?md5=kecheng => generated 521820 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/shangjia.jpg
+[pid: 15156|app: 0|req: 2188/3354] 127.0.0.1 () {32 vars in 702 bytes} [Fri May 10 11:32:44 2019] GET /api/v1.0/server/image?md5=shangjia => generated 5233 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15158|app: 0|req: 723/3355] 127.0.0.1 () {32 vars in 696 bytes} [Fri May 10 11:32:44 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Fri May 10 11:32:45 2019 - logsize: 1461, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557459165...

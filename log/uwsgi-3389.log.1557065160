@@ -1,0 +1,33 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May  5 22:05:58 2019] ***
+compiled with version: 7.3.0 on 05 May 2019 13:24:31
+os: Linux-4.15.0-29-generic #31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018
+nodename: VM-0-9-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/plan
+writing pidfile to /home/ubuntu/plan/pid/uwsgi-3389.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/plan
+your processes number limit is 7102
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :3389 fd 6
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55b5ab35ae90
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364520 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55b5ab35ae90 pid: 15154 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15154)
+spawned uWSGI worker 1 (pid: 15156, cores: 1)
+spawned uWSGI worker 2 (pid: 15157, cores: 1)
+spawned uWSGI worker 3 (pid: 15158, cores: 1)
+spawned uWSGI worker 4 (pid: 15159, cores: 1)
+Sun May  5 22:06:00 2019 - logsize: 1516, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557065160...

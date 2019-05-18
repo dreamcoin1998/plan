@@ -1,0 +1,15 @@
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+uwsgi_proto_http_parser(): Connection reset by peer [proto/http.c line 463]
+./static/upload/photos/2019/05/06/logo.jpg
+Wed May  8 16:27:17 2019 - logsize: 1031, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557304037...

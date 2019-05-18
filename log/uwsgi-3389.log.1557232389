@@ -1,0 +1,16 @@
+[pid: 15158|app: 0|req: 271/1187] 127.0.0.1 () {48 vars in 906 bytes} [Tue May  7 20:32:51 2019] POST /api/v1.0/server/location => generated 48 bytes in 1 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+城市： 长沙市
+<class 'django.db.models.query.QuerySet'>
+对象： 天地银行分行
+对象： 十八届的回答是
+[]
+[pid: 15157|app: 0|req: 132/1188] 127.0.0.1 () {44 vars in 993 bytes} [Tue May  7 20:32:58 2019] GET /api/v1.0/server/getjob?sort=city&city=%E9%95%BF%E6%B2%99%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 6 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+b'{"sort":"city","city":"\xe6\xbc\xb3\xe5\xb7\x9e\xe5\xb8\x82"}' 成功接受请求
+{"sort":"city","city":"漳州市"} 成功解码
+{'sort': 'city', 'city': '漳州市'} 成功
+漳州市
+<class 'django.db.models.query.QuerySet'>
+对象： 天地银行
+[]
+[pid: 15156|app: 0|req: 699/1189] 127.0.0.1 () {48 vars in 902 bytes} [Tue May  7 20:33:08 2019] POST /api/v1.0/server/getjob => generated 62 bytes in 4 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+Tue May  7 20:33:09 2019 - logsize: 1117, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557232389...

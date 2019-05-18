@@ -1,0 +1,12 @@
+[pid: 15156|app: 0|req: 311/525] 127.0.0.1 () {44 vars in 1066 bytes} [Mon May  6 00:29:23 2019] POST /admin/api/shangjia/add/?_to_field=id&_popup=1 => generated 399 bytes in 29 msecs (HTTP/1.0 200) 6 headers in 226 bytes (1 switches on core 0)
+[pid: 15158|app: 0|req: 123/526] 127.0.0.1 () {44 vars in 1031 bytes} [Mon May  6 00:29:41 2019] POST /admin/order/recruitment/3/change/ => generated 0 bytes in 46 msecs (HTTP/1.0 302) 8 headers in 500 bytes (1 switches on core 0)
+[pid: 15156|app: 0|req: 312/527] 127.0.0.1 () {42 vars in 1195 bytes} [Mon May  6 00:29:41 2019] GET /admin/order/recruitment/ => generated 5260 bytes in 38 msecs (HTTP/1.0 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 15158|app: 0|req: 124/528] 127.0.0.1 () {34 vars in 690 bytes} [Mon May  6 00:29:41 2019] GET /admin/jsi18n/ => generated 7684 bytes in 5 msecs (HTTP/1.0 200) 4 headers in 115 bytes (1 switches on core 0)
+城市： 衡阳市
+<class 'django.db.models.query.QuerySet'>
+对象： 南华大学联合托管委员会
+对象： 青草教育中心
+对象： 艺术培训学校
+[{'id': 1, 'position': '南华大学校长', 'description': '负责南华大学学生的恋爱、饮食、睡眠，专门给学生放假等等有意义有价值的事务。', 'work_location': '衡阳市', 'renshu': 100, 'academic': 'Benke', 'subject': 'Chinese', 'price': '10000/天', 'type': 'Full_Time', 'pub_time': '2019-04-16', 'shangjia': '南华大学联合托管委员会', 'address': '湖南省衡阳市常胜西路28号', 'image': ['photos/2019/04/26/shuren.jpg']}, {'id': 4, 'position': '兼职老师', 'description': '英语特长优先，联系电话：18229299026（王老师）', 'work_location': '蒸湘区联合街道北塘村6组', 'renshu': 100, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '800/学期', 'type': 'Full_Time', 'pub_time': '2019-04-20', 'shangjia': '青草教育中心', 'address': '湖南省衡阳市蒸湘区联合街道北塘村6组', 'image': ['photos/2019/04/26/qixin.jpg']}, {'id': 3, 'position': '地推兼职', 'description': '男女不限，做事细心，必须大胆，敢于跟家长聊天，索要电话号码。执行力强，严肃拒绝混日子的，不认真的，做得好可以考虑长期兼职。工作时间：下午3点到6点。工作内容：地推收集电话名单（幼儿园、小学门口）', 'work_location': '立新水映豪庭 （红湘路）', 'renshu': 4, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '3000/月', 'type': 'Part_Time', 'pub_time': '2019-04-19', 'shangjia': '艺术培训学校', 'address': '湖南省衡阳市立新水映豪庭 （红湘路）', 'image': ['photos/2019/04/26/xiangrikui.jpg']}]
+[pid: 15156|app: 0|req: 313/529] 127.0.0.1 () {44 vars in 993 bytes} [Mon May  6 00:29:45 2019] GET /api/v1.0/server/getjob?sort=city&city=%E8%A1%A1%E9%98%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 2436 bytes in 10 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+Mon May  6 00:29:46 2019 - logsize: 2968, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557073786...

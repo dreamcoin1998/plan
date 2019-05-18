@@ -1,0 +1,18 @@
+[pid: 15156|app: 0|req: 1254/2078] 127.0.0.1 () {34 vars in 922 bytes} [Thu May  9 22:48:11 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15156|app: 0|req: 1255/2079] 127.0.0.1 () {34 vars in 872 bytes} [Thu May  9 22:48:11 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+{'latitude': 26.901297, 'longitude': 112.574952}
+[pid: 15156|app: 0|req: 1256/2080] 127.0.0.1 () {34 vars in 715 bytes} [Thu May  9 22:48:13 2019] POST /api/v1.0/server/location => generated 48 bytes in 0 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+/home/ubuntu/plan/resource/images/shequn.jpg
+[pid: 15156|app: 0|req: 1257/2081] 127.0.0.1 () {34 vars in 859 bytes} [Thu May  9 22:48:14 2019] GET /api/v1.0/server/image?md5=shequn => generated 11006 bytes in 2 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/guanshu.jpg
+[pid: 15158|app: 0|req: 471/2082] 127.0.0.1 () {34 vars in 861 bytes} [Thu May  9 22:48:14 2019] GET /api/v1.0/server/image?md5=guanshu => generated 47687 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/bianxing.jpg
+[pid: 15157|app: 0|req: 213/2083] 127.0.0.1 () {34 vars in 863 bytes} [Thu May  9 22:48:14 2019] GET /api/v1.0/server/image?md5=bianxing => generated 47985 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/shejiao.jpg
+[pid: 15156|app: 0|req: 1258/2084] 127.0.0.1 () {34 vars in 861 bytes} [Thu May  9 22:48:14 2019] GET /api/v1.0/server/image?md5=shejiao => generated 63437 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/xingqu.jpg
+[pid: 15156|app: 0|req: 1259/2085] 127.0.0.1 () {34 vars in 859 bytes} [Thu May  9 22:48:14 2019] GET /api/v1.0/server/image?md5=xingqu => generated 40323 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/haotuoguan.jpg
+[pid: 15158|app: 0|req: 472/2086] 127.0.0.1 () {34 vars in 867 bytes} [Thu May  9 22:48:14 2019] GET /api/v1.0/server/image?md5=haotuoguan => generated 38702 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Thu May  9 22:48:15 2019 - logsize: 2598, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557413295...

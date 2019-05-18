@@ -1,0 +1,16 @@
+Not Found: /api/v1.0/server/hosting
+[pid: 15156|app: 0|req: 2033/3143] 127.0.0.1 () {34 vars in 714 bytes} [Fri May 10 07:09:48 2019] POST /api/v1.0/server/hosting => generated 3453 bytes in 5 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+城市： 武汉市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15158|app: 0|req: 684/3144] 127.0.0.1 () {32 vars in 840 bytes} [Fri May 10 07:09:57 2019] GET /api/v1.0/server/getjob?sort=city&city=%E6%AD%A6%E6%B1%89%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+{'session_key': '4NpBIKErz6OtP0u6dktBkg==', 'openid': 'oqpd45AYWD6wHKurrwfgVCwG39bc'}
+new user: openid: oqpd45AYWD6wHKurrwfgVCwG39bc, nickName: 小松
+[pid: 15156|app: 0|req: 2034/3145] 127.0.0.1 () {34 vars in 708 bytes} [Fri May 10 07:12:56 2019] POST /api/v1.0/server/auth => generated 45 bytes in 195 msecs (HTTP/1.0 200) 5 headers in 245 bytes (1 switches on core 0)
+./static/upload/photos/2019/05/06/logo.jpg
+[pid: 15156|app: 0|req: 2035/3146] 127.0.0.1 () {28 vars in 694 bytes} [Fri May 10 07:56:46 2019] GET /api/v1.0/server/job?md5=photos/2019/05/06/logo.jpg => generated 10757 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/04/26/xiangrikui.jpg
+[pid: 15156|app: 0|req: 2036/3147] 127.0.0.1 () {34 vars in 901 bytes} [Fri May 10 07:56:46 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15158|app: 0|req: 685/3148] 127.0.0.1 () {34 vars in 851 bytes} [Fri May 10 07:56:46 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Fri May 10 07:56:47 2019 - logsize: 1908, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557446207...

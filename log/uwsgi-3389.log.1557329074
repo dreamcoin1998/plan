@@ -1,0 +1,20 @@
+up
+城市： 衡阳市
+[pid: 15156|app: 0|req: 998/1720] 127.0.0.1 () {32 vars in 798 bytes} [Wed May  8 23:24:32 2019] GET /api/v1.0/server/getjob?sort=zhonghe&city=%E8%A1%A1%E9%98%B3%E5%B8%82&value=up => generated 3029 bytes in 8 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+b'{"latitude":26.90177,"longitude":112.574196,"sort":"near","city":"\xe8\xa1\xa1\xe9\x98\xb3\xe5\xb8\x82"}' 成功接受请求
+{"latitude":26.90177,"longitude":112.574196,"sort":"near","city":"衡阳市"} 成功解码
+{'latitude': 26.90177, 'longitude': 112.574196, 'sort': 'near', 'city': '衡阳市'} 成功
+城市： 衡阳市
+[(<Shangjia: 儒家托管>, 69193.41556140488), (<Shangjia: 青草教育中心>, 180808.35680012713), (<Shangjia: 艺术培训学校>, 1287419.0620474578), (<Shangjia: 浙大博渊传播有限公司>, 1398545.104672678)]
+对象： (<Shangjia: 儒家托管>, 69193.41556140488)
+对象： (<Shangjia: 青草教育中心>, 180808.35680012713)
+对象： (<Shangjia: 艺术培训学校>, 1287419.0620474578)
+对象： (<Shangjia: 浙大博渊传播有限公司>, 1398545.104672678)
+距离最近 [{'id': 4, 'position': '兼职老师', 'description': '英语特长优先，联系电话：18229299026（王老师）', 'work_location': '蒸湘区联合街道北塘村6组', 'renshu': 100, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '800/月', 'type': 'Full_Time', 'pub_time': '2019-04-20', 'shangjia': '青草教育中心', 'address': '湖南省衡阳市蒸湘区联合街道北塘村6组', 'image': ['photos/2019/04/26/qixin.jpg']}, {'id': 3, 'position': '地推兼职', 'description': '男女不限，做事细心，必须大胆，敢于跟家长聊天，索要电话号码。执行力强，严肃拒绝混日子的，不认真的，做得好可以考虑长期兼职。工作时间：下午3点到6点。工作内容：地推收集电话名单（幼儿园、小学门口）', 'work_location': '立新水映豪庭 （红湘路）', 'renshu': 4, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '3000/月', 'type': 'Part_Time', 'pub_time': '2019-04-19', 'shangjia': '艺术培训学校', 'address': '湖南省衡阳市立新水映豪庭 （红湘路）', 'image': ['photos/2019/04/26/xiangrikui.jpg']}, {'id': 2, 'position': '博渊传播有限公司', 'description': 'A.负责学生的思想政治工作及教学工作 B.监管学生学习和答疑 D.每日统计好学生学习数据 C.每周定期向班主任，学生家长反馈学生学习情况。                       工作时间：下午2:30到晚自习，不超过5小时工作时间。 工作地点：田家炳实验中学，衡阳市一中，衡阳市八中，铁一中，等衡阳区域学校内。', 'work_location': '湖南省衡阳市浙大博渊传播有限公司湖南分公司', 'renshu': 100, 'academic': 'Benke', 'subject': 'Math', 'price': '2000/月', 'type': 'Full_Time', 'pub_time': '2019-04-19', 'shangjia': '浙大博渊传播有限公司', 'address': '湖南省衡阳市浙大博渊传播有限公司湖南分公司', 'image': ['photos/2019/04/26/qiyoutuo.jpg']}]
+[pid: 15158|app: 0|req: 402/1721] 127.0.0.1 () {34 vars in 710 bytes} [Wed May  8 23:24:33 2019] POST /api/v1.0/server/getjob => generated 3126 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+./static/upload/photos/2019/04/26/qixin.jpg
+[pid: 15156|app: 0|req: 999/1722] 127.0.0.1 () {34 vars in 888 bytes} [Wed May  8 23:24:33 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/qixin.jpg => generated 22782 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/04/26/xiangrikui.jpg
+[pid: 15157|app: 0|req: 192/1723] 127.0.0.1 () {34 vars in 898 bytes} [Wed May  8 23:24:33 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/04/26/qiyoutuo.jpg
+Wed May  8 23:24:34 2019 - logsize: 3977, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557329074...

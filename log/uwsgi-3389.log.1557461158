@@ -1,0 +1,16 @@
+城市： 厦门市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15156|app: 0|req: 2439/3693] 127.0.0.1 () {32 vars in 838 bytes} [Fri May 10 12:05:46 2019] GET /api/v1.0/server/getjob?sort=city&city=%E5%8E%A6%E9%97%A8%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 4 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+城市： 厦门市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15156|app: 0|req: 2440/3694] 127.0.0.1 () {32 vars in 838 bytes} [Fri May 10 12:05:54 2019] GET /api/v1.0/server/getjob?sort=city&city=%E5%8E%A6%E9%97%A8%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+b'{"latitude":24.46971,"longitude":118.108669,"sort":"near","city":"\xe5\x8e\xa6\xe9\x97\xa8\xe5\xb8\x82"}' 成功接受请求
+{"latitude":24.46971,"longitude":118.108669,"sort":"near","city":"厦门市"} 成功解码
+{'latitude': 24.46971, 'longitude': 118.108669, 'sort': 'near', 'city': '厦门市'} 成功
+城市： 厦门市
+[]
+距离最近 []
+[pid: 15158|app: 0|req: 787/3695] 127.0.0.1 () {34 vars in 710 bytes} [Fri May 10 12:05:57 2019] POST /api/v1.0/server/getjob => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+Fri May 10 12:05:58 2019 - logsize: 1289, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557461158...

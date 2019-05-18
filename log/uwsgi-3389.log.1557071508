@@ -1,0 +1,11 @@
+[pid: 15156|app: 0|req: 93/168] 127.0.0.1 () {34 vars in 852 bytes} [Sun May  5 23:51:07 2019] GET /api/v1.0/server/image?md5=guanshutu => generated 590402 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+{'session_key': 'db8rQQ2U/EuM4KFneldSHw==', 'openid': 'oqpd45PV1iaK0toco8xUxgZUUrtg'}
+new user: openid: oqpd45PV1iaK0toco8xUxgZUUrtg, nickName: 榴莲味的方方
+[pid: 15156|app: 0|req: 94/169] 127.0.0.1 () {34 vars in 703 bytes} [Sun May  5 23:51:14 2019] POST /api/v1.0/server/auth => generated 45 bytes in 193 msecs (HTTP/1.0 200) 5 headers in 245 bytes (1 switches on core 0)
+城市： 衡阳市
+<class 'django.db.models.query.QuerySet'>
+对象： 南华大学联合托管委员会
+[{'id': 1, 'position': '南华大学校长', 'description': '负责南华大学学生的恋爱、饮食、睡眠，专门给学生放假等等有意义有价值的事务。', 'work_location': '衡阳市', 'renshu': 100, 'academic': 'Benke', 'subject': 'Chinese', 'price': '10000/天', 'type': 'Full_Time', 'pub_time': '2019-04-16', 'shangjia': '南华大学联合托管委员会', 'address': '湖南省衡阳市常胜西路28号', 'image': ['photos/2019/04/26/shuren.jpg']}, {'id': 3, 'position': 'assa', 'description': 'asdada', 'work_location': 'dasdasd', 'renshu': 100, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '12132/月', 'type': 'Full_Time', 'pub_time': '2019-04-19', 'shangjia': '南华大学联合托管委员会', 'address': '湖南省衡阳市常胜西路28号', 'image': ['photos/2019/04/26/xiangrikui.jpg']}]
+[pid: 15158|app: 0|req: 36/170] 127.0.0.1 () {32 vars in 834 bytes} [Sun May  5 23:51:47 2019] GET /api/v1.0/server/getjob?sort=city&city=%E8%A1%A1%E9%98%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 1169 bytes in 9 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+./static/upload/photos/2019/04/26/shuren.jpg
+Sun May  5 23:51:48 2019 - logsize: 1908, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557071508...

@@ -1,0 +1,12 @@
+城市： 衡阳市
+<class 'django.db.models.query.QuerySet'>
+对象： 南华大学联合托管委员会
+[{'id': 1, 'position': '南华大学校长', 'description': '负责南华大学学生的恋爱、饮食、睡眠，专门给学生放假等等有意义有价值的事务。', 'work_location': '衡阳市', 'renshu': 100, 'academic': 'Benke', 'subject': 'Chinese', 'price': '10000/天', 'type': 'Full_Time', 'pub_time': '2019-04-16', 'shangjia': '南华大学联合托管委员会', 'address': '湖南省衡阳市常胜西路28号', 'image': ['photos/2019/04/26/shuren.jpg']}, {'id': 3, 'position': 'assa', 'description': 'asdada', 'work_location': 'dasdasd', 'renshu': 100, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '12132/月', 'type': 'Full_Time', 'pub_time': '2019-04-19', 'shangjia': '南华大学联合托管委员会', 'address': '湖南省衡阳市常胜西路28号', 'image': ['photos/2019/04/26/xiangrikui.jpg']}]
+[pid: 15158|app: 0|req: 29/125] 127.0.0.1 () {32 vars in 839 bytes} [Sun May  5 23:37:15 2019] GET /api/v1.0/server/getjob?sort=city&city=%E8%A1%A1%E9%98%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 1169 bytes in 15 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+城市： 衡阳市
+<class 'django.db.models.query.QuerySet'>
+对象： 南华大学联合托管委员会
+[{'id': 1, 'position': '南华大学校长', 'description': '负责南华大学学生的恋爱、饮食、睡眠，专门给学生放假等等有意义有价值的事务。', 'work_location': '衡阳市', 'renshu': 100, 'academic': 'Benke', 'subject': 'Chinese', 'price': '10000/天', 'type': 'Full_Time', 'pub_time': '2019-04-16', 'shangjia': '南华大学联合托管委员会', 'address': '湖南省衡阳市常胜西路28号', 'image': ['photos/2019/04/26/shuren.jpg']}, {'id': 3, 'position': 'assa', 'description': 'asdada', 'work_location': 'dasdasd', 'renshu': 100, 'academic': 'Dazhuan', 'subject': 'Chinese', 'price': '12132/月', 'type': 'Full_Time', 'pub_time': '2019-04-19', 'shangjia': '南华大学联合托管委员会', 'address': '湖南省衡阳市常胜西路28号', 'image': ['photos/2019/04/26/xiangrikui.jpg']}]
+[pid: 15156|app: 0|req: 66/126] 127.0.0.1 () {32 vars in 839 bytes} [Sun May  5 23:37:15 2019] GET /api/v1.0/server/getjob?sort=city&city=%E8%A1%A1%E9%98%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 1169 bytes in 7 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+./static/upload/photos/2019/04/26/shuren.jpg
+Sun May  5 23:37:16 2019 - logsize: 2514, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557070636...

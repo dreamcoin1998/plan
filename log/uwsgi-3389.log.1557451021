@@ -1,0 +1,15 @@
+b'{"latitude":22.546174,"longitude":113.934224,"sort":"near","city":"\xe6\xb7\xb1\xe5\x9c\xb3\xe5\xb8\x82"}' 成功接受请求
+{"latitude":22.546174,"longitude":113.934224,"sort":"near","city":"深圳市"} 成功解码
+{'latitude': 22.546174, 'longitude': 113.934224, 'sort': 'near', 'city': '深圳市'} 成功
+城市： 深圳市
+[]
+距离最近 []
+[pid: 15159|app: 0|req: 156/3192] 127.0.0.1 () {34 vars in 707 bytes} [Fri May 10 09:16:59 2019] POST /api/v1.0/server/getjob => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+b'{"latitude":22.546174,"longitude":113.934224,"sort":"near","city":"\xe6\xb7\xb1\xe5\x9c\xb3\xe5\xb8\x82"}' 成功接受请求
+{"latitude":22.546174,"longitude":113.934224,"sort":"near","city":"深圳市"} 成功解码
+{'latitude': 22.546174, 'longitude': 113.934224, 'sort': 'near', 'city': '深圳市'} 成功
+城市： 深圳市
+[]
+距离最近 []
+[pid: 15156|app: 0|req: 2068/3193] 127.0.0.1 () {34 vars in 707 bytes} [Fri May 10 09:17:00 2019] POST /api/v1.0/server/getjob => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+Fri May 10 09:17:01 2019 - logsize: 1145, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557451021...

@@ -1,0 +1,9 @@
+/home/ubuntu/plan/resource/images/shangjia.jpg
+[pid: 15156|app: 0|req: 1752/2777] 127.0.0.1 () {36 vars in 845 bytes} [Fri May 10 01:16:52 2019] GET /api/v1.0/server/image?md5=shangjia => generated 5233 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/qiyoutuo.jpg
+[pid: 15156|app: 0|req: 1753/2778] 127.0.0.1 () {36 vars in 845 bytes} [Fri May 10 01:16:52 2019] GET /api/v1.0/server/image?md5=qiyoutuo => generated 34725 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/qiyoutuo.jpg
+[pid: 15158|app: 0|req: 622/2779] 127.0.0.1 () {36 vars in 845 bytes} [Fri May 10 01:17:13 2019] GET /api/v1.0/server/image?md5=qiyoutuo => generated 34725 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/kecheng.jpg
+[pid: 15157|app: 0|req: 256/2780] 127.0.0.1 () {36 vars in 843 bytes} [Fri May 10 01:17:13 2019] GET /api/v1.0/server/image?md5=kecheng => generated 521820 bytes in 2 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Fri May 10 01:17:14 2019 - logsize: 1180, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557422234...

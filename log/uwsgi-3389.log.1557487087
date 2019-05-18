@@ -1,0 +1,19 @@
+/home/ubuntu/plan/resource/images/haotuoguan.jpg
+[pid: 15158|app: 0|req: 876/4146] 127.0.0.1 () {36 vars in 849 bytes} [Fri May 10 19:17:50 2019] GET /api/v1.0/server/image?md5=haotuoguan => generated 38702 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/aihao.jpg
+[pid: 15159|app: 0|req: 174/4147] 127.0.0.1 () {36 vars in 839 bytes} [Fri May 10 19:17:52 2019] GET /api/v1.0/server/image?md5=aihao => generated 578734 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+{'latitude': 28.11266, 'longitude': 112.9834}
+[pid: 15156|app: 0|req: 2769/4148] 127.0.0.1 () {48 vars in 906 bytes} [Fri May 10 19:18:02 2019] POST /api/v1.0/server/location => generated 48 bytes in 1 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan1.jpg
+[pid: 15158|app: 0|req: 877/4149] 127.0.0.1 () {36 vars in 853 bytes} [Fri May 10 19:18:06 2019] GET /api/v1.0/server/image?md5=zhaotuoguan1 => generated 225450 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan2.jpg
+[pid: 15156|app: 0|req: 2770/4150] 127.0.0.1 () {36 vars in 853 bytes} [Fri May 10 19:18:06 2019] GET /api/v1.0/server/image?md5=zhaotuoguan2 => generated 278035 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/zhaotuoguan3.jpg
+[pid: 15156|app: 0|req: 2771/4151] 127.0.0.1 () {36 vars in 853 bytes} [Fri May 10 19:18:06 2019] GET /api/v1.0/server/image?md5=zhaotuoguan3 => generated 257972 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/tubiao.jpg
+[pid: 15158|app: 0|req: 878/4152] 127.0.0.1 () {36 vars in 841 bytes} [Fri May 10 19:18:06 2019] GET /api/v1.0/server/image?md5=tubiao => generated 11507 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/qiyoutuo.jpg
+[pid: 15156|app: 0|req: 2772/4153] 127.0.0.1 () {36 vars in 845 bytes} [Fri May 10 19:18:06 2019] GET /api/v1.0/server/image?md5=qiyoutuo => generated 34725 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15158|app: 0|req: 879/4154] 127.0.0.1 () {36 vars in 839 bytes} [Fri May 10 19:18:06 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Fri May 10 19:18:07 2019 - logsize: 2648, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557487087...

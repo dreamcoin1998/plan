@@ -1,0 +1,21 @@
+[pid: 15156|app: 0|req: 2270/3465] 127.0.0.1 () {34 vars in 843 bytes} [Fri May 10 11:36:37 2019] GET /api/v1.0/server/image?md5=denglu => generated 20259 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+城市： 深圳市
+<class 'django.db.models.query.QuerySet'>
+[]
+[pid: 15156|app: 0|req: 2271/3466] 127.0.0.1 () {32 vars in 826 bytes} [Fri May 10 11:36:40 2019] GET /api/v1.0/server/getjob?sort=city&city=%E6%B7%B1%E5%9C%B3%E5%B8%82&q=react%2Blanguage%3Ajavascript => generated 62 bytes in 3 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+b'{"sort":"praise","city":"\xe6\xb7\xb1\xe5\x9c\xb3\xe5\xb8\x82"}' 成功接受请求
+{"sort":"praise","city":"深圳市"} 成功解码
+{'sort': 'praise', 'city': '深圳市'} 成功
+深圳市
+b'{"sort":"filter"}' 成功接受请求
+{"sort":"filter"} 成功解码
+{'sort': 'filter'} 成功
+[pid: 15158|app: 0|req: 744/3467] 127.0.0.1 () {34 vars in 698 bytes} [Fri May 10 11:36:52 2019] POST /api/v1.0/server/getjob => generated 61 bytes in 8 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 15157|app: 0|req: 293/3468] 127.0.0.1 () {34 vars in 698 bytes} [Fri May 10 11:36:52 2019] POST /api/v1.0/server/getjob => generated 3126 bytes in 13 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+./static/upload/photos/2019/04/26/qixin.jpg
+[pid: 15156|app: 0|req: 2272/3469] 127.0.0.1 () {34 vars in 876 bytes} [Fri May 10 11:36:52 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/qixin.jpg => generated 22782 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/04/26/qiyoutuo.jpg
+[pid: 15158|app: 0|req: 745/3470] 127.0.0.1 () {34 vars in 882 bytes} [Fri May 10 11:36:52 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/qiyoutuo.jpg => generated 34725 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/04/26/xiangrikui.jpg
+[pid: 15159|app: 0|req: 161/3471] 127.0.0.1 () {34 vars in 886 bytes} [Fri May 10 11:36:52 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 0 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Fri May 10 11:36:53 2019 - logsize: 2284, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557459413...

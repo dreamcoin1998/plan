@@ -1,0 +1,9 @@
+[pid: 15156|app: 0|req: 5/9] 36.157.247.222 () {36 vars in 1021 bytes} [Sun May  5 22:10:17 2019] GET /admin/ => generated 10067 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 228 bytes (1 switches on core 0)
+Not Found: /static/admin/css/dashboard.css
+Not Found: /static/admin/css/base.css
+[pid: 15157|app: 0|req: 2/10] 36.157.247.222 () {34 vars in 975 bytes} [Sun May  5 22:10:17 2019] GET /static/admin/css/base.css => generated 2126 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 15158|app: 0|req: 3/11] 36.157.247.222 () {34 vars in 985 bytes} [Sun May  5 22:10:17 2019] GET /static/admin/css/dashboard.css => generated 2141 bytes in 6 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /static/admin/css/responsive.css
+[pid: 15159|app: 0|req: 2/12] 36.157.247.222 () {34 vars in 987 bytes} [Sun May  5 22:10:20 2019] GET /static/admin/css/responsive.css => generated 2144 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /
+Sun May  5 22:10:27 2019 - logsize: 1032, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557065427...

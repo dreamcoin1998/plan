@@ -1,0 +1,9 @@
+{'latitude': 28.540597, 'longitude': 112.377004}
+[pid: 15156|app: 0|req: 1220/2039] 127.0.0.1 () {34 vars in 704 bytes} [Thu May  9 22:24:29 2019] POST /api/v1.0/server/location => generated 48 bytes in 0 msecs (HTTP/1.0 200) 3 headers in 100 bytes (1 switches on core 0)
+./static/upload/photos/2019/05/06/logo.jpg
+[pid: 15156|app: 0|req: 1221/2040] 127.0.0.1 () {32 vars in 676 bytes} [Thu May  9 22:25:13 2019] GET /api/v1.0/server/job?md5=photos/2019/05/06/logo.jpg => generated 10757 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+./static/upload/photos/2019/04/26/xiangrikui.jpg
+[pid: 15156|app: 0|req: 1222/2041] 127.0.0.1 () {32 vars in 731 bytes} [Thu May  9 22:25:13 2019] GET /api/v1.0/server/job?md5=photos/2019/04/26/xiangrikui.jpg => generated 35698 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+/home/ubuntu/plan/resource/images/rujia.jpg
+[pid: 15156|app: 0|req: 1223/2042] 127.0.0.1 () {32 vars in 681 bytes} [Thu May  9 22:25:13 2019] GET /api/v1.0/server/image?md5=rujia => generated 53235 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 2 headers in 73 bytes (0 switches on core 0)
+Thu May  9 22:25:14 2019 - logsize: 1190, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557411914...

@@ -1,0 +1,21 @@
+down
+城市： 衡阳市
+[pid: 15156|app: 0|req: 997/1718] 127.0.0.1 () {32 vars in 802 bytes} [Wed May  8 23:24:29 2019] GET /api/v1.0/server/getjob?sort=zhonghe&city=%E8%A1%A1%E9%98%B3%E5%B8%82&value=down => generated 3029 bytes in 7 msecs (HTTP/1.0 200) 3 headers in 102 bytes (1 switches on core 0)
+./static/upload/
+Internal Server Error: /api/v1.0/server/job
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "./api/views.py", line 52, in get
+    return FileResponse(open(imgfile, 'rb'), content_type='image/jpg')
+IsADirectoryError: [Errno 21] Is a directory: './static/upload/'
+[pid: 15158|app: 0|req: 401/1719] 127.0.0.1 () {34 vars in 834 bytes} [Wed May  8 23:24:29 2019] GET /api/v1.0/server/job?md5= => generated 66854 bytes in 36 msecs (HTTP/1.0 500) 4 headers in 129 bytes (1 switches on core 0)
+Wed May  8 23:24:30 2019 - logsize: 1579, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557329070...

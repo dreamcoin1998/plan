@@ -1,0 +1,20 @@
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+uwsgi_proto_http_parser() -> client closed connection
+Not Found: /
+[pid: 15156|app: 0|req: 522/897] 127.0.0.1 () {28 vars in 308 bytes} [Mon May  6 16:18:53 2019] GET / => generated 2019 bytes in 5 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+uwsgi_proto_http_parser() -> client closed connection
+Not Found: /
+[pid: 15158|app: 0|req: 206/898] 106.75.84.197 () {22 vars in 234 bytes} [Mon May  6 21:54:28 2019] GET / => generated 2033 bytes in 5 msecs (HTTP/1.0 404) 3 headers in 102 bytes (1 switches on core 0)
+Mon May  6 21:54:29 2019 - logsize: 1236, triggering rotation to /home/ubuntu/plan/log/uwsgi-3389.log.1557150869...

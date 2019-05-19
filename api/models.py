@@ -57,13 +57,21 @@ class Child(models.Model):
     # 出生姓名
     name = models.CharField(max_length=32, verbose_name='姓名')
     # 出生日期
-    born_date = models.DateField(verbose_name='出生日期', blank=True)
+    born_date = models.CharField(verbose_name='出生日期', blank=True, max_length=256, null=True)
+    # 证件类型
+    card_type = models.CharField(max_length=25, verbose_name='证件类型', default='身份证')
+    # 证件号码
+    idcard = models.CharField(max_length=50, verbose_name='证件号码', default='暂无证件号码', null=True)
+    # 学校
+    school = models.CharField(max_length=50, verbose_name='学校', default='暂无学校')
+    # 学校区域
+    school_area = models.CharField(max_length=50, verbose_name='学校区域', default='暂无学校区域')
     # 性别选项
     GENDER = (
         ('boy', '男孩'),
         ('girl', '女孩')
     )
-    gender = models.CharField(choices=GENDER, verbose_name='性别', blank=True, max_length=12)
+    gender = models.CharField(choices=GENDER, verbose_name='性别', blank=True, max_length=12, null=True)
     # 年级选项
     GRADE = (
         ('BS', '未上学'),
@@ -85,15 +93,15 @@ class Child(models.Model):
         ('HTW', '高三')
     )
     # 年级
-    grade = models.CharField(choices=GRADE, verbose_name='年级', blank=True, max_length=12)
+    grade = models.CharField(choices=GRADE, verbose_name='年级', blank=True, max_length=12, null=True)
     # 紧急联系人
     contact_name = models.CharField(max_length=32, verbose_name='紧急联系人', null=True)
     # 紧急联系电话, 这里后台不做验证，前端验证之后确保无误（同备用联系人电话）
     contact_phone = models.CharField(max_length=11, verbose_name='紧急联系电话', null=True)
     # 备用联系人
-    another_contact_name = models.CharField(max_length=32, blank=True, verbose_name='备用联系人')
+    another_contact_name = models.CharField(max_length=32, blank=True, verbose_name='备用联系人', null=True)
     # 备用联系电话
-    another_contact_phonenumber = models.CharField(max_length=11, verbose_name='备用联系电话', blank=True)
+    another_contact_phonenumber = models.CharField(max_length=11, verbose_name='备用联系电话', blank=True, null=True)
     # 是否有过敏史
     is_allergy = models.BooleanField(default=False, verbose_name='是否有过敏史')
     # 过敏史
@@ -102,6 +110,8 @@ class Child(models.Model):
     content_type = models.ForeignKey(ContentType, on_delete=models.DO_NOTHING)
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey('content_type', 'object_id')
+    # 图片
+    image = models.CharField(max_length=125, verbose_name='图片文件名称')
 
     def __str__(self):
         return self.name

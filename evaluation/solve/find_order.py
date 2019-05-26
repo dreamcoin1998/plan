@@ -2,6 +2,8 @@ from django.views import View
 from utils.response import CommonResponseMixin, ReturnCode
 from django.http import JsonResponse
 
+
+# 传回前端找托管页面的数据
 SHANGJIA = [{
     "name": "博思特Beast托教中心",
     "star": 4,
@@ -124,6 +126,8 @@ SHANGJIA = [{
     }
 ]
 
+
+#传回前端首页的数据
 SHOUYE_SHANGJIA = {
         "name": "佳音托教中心",
         "star": 5,
@@ -169,7 +173,7 @@ SHOUYE_SHANGJIA = {
 # 获取托管机构实例
 class Tuoguan(View, CommonResponseMixin):
     def get(self, requesrt):
-        date = self.wrap_json_response(data=SHANGJIA, code=ReturnCode.SUCCESS, message="shangjia data success.")
+        date = self.wrap_json_response(data=SHANGJIA, code=ReturnCode.SUCCESS, message="shangjia data success.") #组装成响应信息返回
         return JsonResponse(data=date, safe=False)
 
     def post(self, request):

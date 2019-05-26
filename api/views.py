@@ -2,7 +2,6 @@ import os
 import re
 import json
 import hashlib
-
 from django.shortcuts import render
 from plan import settings
 from utils.response import CommonResponseMixin, ReturnCode

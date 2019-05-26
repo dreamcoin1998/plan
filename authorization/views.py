@@ -1,10 +1,14 @@
 import json
+import hashlib
+import os
+from plan.settings import IMAGES_DIR
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views import View
 from utils.auth import c2s, already_authorized
 from utils.response import ReturnCode, CommonResponseMixin
-from .models import Yonghu
+from .models import Yonghu, Renzheng
+from utils.idcard import main
 
 # Create your views here.
 class UserView(View, CommonResponseMixin):
@@ -69,3 +73,60 @@ def logout(request):
     response['message'] = 'logout success.'
     return JsonResponse(response, safe=False)
 
+# 接受身份验证图片
+class UploadImage(View, CommonResponseMixin):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        files = request.FILES
+        data = []
+        for key, value in files.items():
+            content = value.read()
+            md5 = hashlib.md5(content).hexdigest()
+            path = os.path.join(IMAGES_DIR + '/', md5 + '.jpg')
+            with open(path, 'wb') as f:
+                f.write(content)
+            yonghu = key[:-1]
+            yonghu = Yonghu.objects.get(nickname=yonghu)
+            renzheng = Renzheng()
+            renzheng.yonghu = yonghu
+            if key[-1] == '0':
+                renzheng.ID_zheng = md5 + '.jpg'
+                main(path, 0)
+            elif key[-1] == '1':
+                renzheng.ID_fan = md5 + '.jpg'
+                main(path, 1)
+            else:
+                renzheng.Ying = md5 + '.jpg'
+            renzheng.save()
+            data.append({'status': renzheng.status})
+        data = self.wrap_json_response(data=data, code=ReturnCode.SUCCESS, message='upload image success.')
+        return JsonResponse(data=data, safe=False)
+
+
+# 身份证识别
+class ID_card():
+    pass
+
+
+# 获取认证审核状态
+class Status(View, CommonResponseMixin):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        data = request.body.decode('utf-8')
+        data = json.loads(data)
+        nickname = data['nickName']
+        yonghu = Yonghu.objects.get(nickname=nickname)
+        print(hasattr(yonghu, 'renzheng'))
+        if hasattr(yonghu, 'renzheng'):
+            status = yonghu.renzheng.status
+        else:
+            status = '不存在'
+        data = {}
+        data['status'] = status
+        print(data)
+        data = self.wrap_json_response(data=data, code=ReturnCode.SUCCESS, message='success.')
+        return JsonResponse(data=data, safe=False)

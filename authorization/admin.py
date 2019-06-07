@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Yonghu
+from .models import Yonghu, Renzheng
 
 # Register your models here.
 class UserAdmin(admin.ModelAdmin):
@@ -7,4 +7,10 @@ class UserAdmin(admin.ModelAdmin):
     ordering = ('id',)
 
 
+class RenzhengAdmin(admin.ModelAdmin):
+    list_display = ('name', 'nationality', 'id_num', 'sex', 'start_date', 'end_date', 'status')
+    ordering = ('id',)
+
+
 admin.site.register(Yonghu)
+admin.site.register(Renzheng)

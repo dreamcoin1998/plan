@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5240e5e4-fdc6-4542-94b6-88a35c85cb0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/authorization/migrations/0011_auto_20190607_2234.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authorization/migrations/0012_auto_20190608_0233.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/images/11e58aae6777bf63f32d00fa6a5ff286.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/images/293873bcefb41687c30752f269ae059e.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/images/75b2c5ef7aefad38b4eab6abd6c357d3.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/utils/bizlicense.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/authorization/admin.py" afterDir="false" />
@@ -62,7 +67,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/authorization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state relative-caret-position="121">
               <caret line="130" column="43" lean-forward="true" selection-start-line="130" selection-start-column="43" selection-end-line="130" selection-end-column="43" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -392,16 +397,15 @@
       <workItem from="1558777529190" duration="24614000" />
       <workItem from="1559046187552" duration="10877000" />
       <workItem from="1559141954526" duration="1843000" />
-      <workItem from="1559907681609" duration="19564000" />
+      <workItem from="1559907681609" duration="19894000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294056000" />
+    <option name="totallyTimeSpent" value="294386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21179625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -417,7 +421,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5013405" side_tool="true" weight="0.18838526" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.11048159" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.4532578" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -728,7 +732,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/authorization/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="121">
           <caret line="130" column="43" lean-forward="true" selection-start-line="130" selection-start-column="43" selection-end-line="130" selection-end-column="43" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />

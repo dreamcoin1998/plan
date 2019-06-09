@@ -14,14 +14,6 @@ class Yonghu(models.Model):
     def __str__(self):
         return self.nickname
 
-    def has_related_object(self):
-        has_renzheng = False
-        try:
-            has_renzheng = (self.renzheng is not None)
-        except Renzheng.DoesNotExist:
-            pass
-        return has_renzheng
-
 
     # 用户身份认证模型
 class Renzheng(models.Model):
@@ -34,10 +26,10 @@ class Renzheng(models.Model):
     nationality = models.CharField(max_length=8, verbose_name='民族', default='')
     id_num = models.CharField(max_length=18, verbose_name='身份证号', default='')
     sex = models.CharField(max_length=2, verbose_name='性别', default='')
-    birth = models.CharField(max_length=8, verbose_name='出生日期', default='')
+    birth = models.CharField(max_length=10, verbose_name='出生日期', default='')
     address = models.CharField(max_length=256, verbose_name='家庭地址', default='')
-    start_date = models.CharField(max_length=8, verbose_name='有效期起始时间', default='')
-    end_date = models.CharField(max_length=8, verbose_name='有效期结束时间', default='')
+    start_date = models.CharField(max_length=10, verbose_name='有效期起始时间', default='')
+    end_date = models.CharField(max_length=10, verbose_name='有效期结束时间', default='')
     issue = models.CharField(max_length=32, verbose_name='签发机关', default='')
 
     zhuce_num = models.CharField(max_length=30, verbose_name='注册号', default='')

@@ -188,3 +188,14 @@ class deleteChild(View, CommonResponseMixin):
         child.delete()
         print('删除成功！')
         return JsonResponse(data=self.wrap_json_response(code=ReturnCode.SUCCESS, message='delete success.'), safe=False)
+
+
+'''
+实现用户搜索功能
+'''
+class search(View, CommonResponseMixin):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        pass

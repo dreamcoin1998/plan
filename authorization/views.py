@@ -163,3 +163,23 @@ class Status(View, CommonResponseMixin):
         print(data)
         data = self.wrap_json_response(data=data, code=ReturnCode.SUCCESS, message='success.')
         return JsonResponse(data=data, safe=False)
+
+
+# 认证通过的用户获取真实姓名
+class getName(View, CommonResponseMixin):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        shuju = {}
+        # 获取前端传过来的数据
+        data = request.body.decode('utf-8')
+        data = json.loads(data)
+        nickName = data['nickName']
+        yonghu = Yonghu.objects.get(nickname=nickName)
+        if yonghu.renzheng.status == '审核通过':
+            shuju['name'] = yonghu.renzheng.name
+            shuju = self.wrap_json_response(data=shuju, code=ReturnCode.SUCCESS, message='send name success.')
+        else:
+            shuju = self.wrap_json_response(code=ReturnCode.FAILED, message='send name failed.')
+        return JsonResponse(data=shuju, safe=False)

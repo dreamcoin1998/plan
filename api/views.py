@@ -7,10 +7,12 @@ from plan import settings
 from utils.response import CommonResponseMixin, ReturnCode
 from django.views import View
 from django.http import JsonResponse, FileResponse
-from .models import Child, Image
+from .models import Child, Image, Shangjia
 from authorization.models import Yonghu
 from django.contrib.contenttypes.models import ContentType
 from plan.settings import IMAGES_DIR
+from order.models import Recruitment
+from django.db.models import Q
 
 
 # 处理用户返回的地理位置,后期进行一些推荐商家，筛选等等处理
@@ -191,11 +193,45 @@ class deleteChild(View, CommonResponseMixin):
 
 
 '''
-实现用户搜索功能
+实现用户搜索功能，搜索商家信息和招聘信息
 '''
 class search(View, CommonResponseMixin):
     def get(self, request):
         pass
 
     def post(self, request):
-        pass
+        data = request.body.decode('utf-8')
+        data = json.loads(data)
+        inquiry = data['q'] # 获取前端查询词
+        # 根据查询词在Shangjia进行不分大小写的查找
+        shangjias = Shangjia.objects.filter(name__icontains=inquiry)
+        # 根据查询词在Recruitment的position或description字段进行不区分大小写的查找
+        recruitments = Recruitment.objects.filter(Q(position__icontains=inquiry) | Q(description__icontains=inquiry))
+        data = []
+        # 如果查询到的商家信息不为空
+        if shangjias != []:
+            for shangjia in shangjias:
+                shuju = {}
+                shuju['name'] = shangjia.name
+                shuju['score'] = shangjia.score
+                shuju['introduction'] = shangjia.introduction
+                shuju['province'] = shangjia.province
+                shuju['city'] = shangjia.city
+                shuju['location'] = shangjia.location
+                shuju['distance'] = shangjia.distance(shangjia.latitude, shangjia.longitude)
+                shuju['type'] = 'shangjia'
+                data.append(shuju)
+        elif recruitments != []:
+            for recruitment in recruitments:
+                shuju = {}
+                shuju['position'] = recruitment.position
+                shuju['description'] = recruitment.description
+                shuju['work_location'] = recruitment.work_location
+                shuju['peo_num'] = recruitment.peo_num
+                shuju['academic'] = recruitment.academic
+                shuju['subject'] = recruitment.subject
+                shuju['pay_method'] = recruitment.pay_method
+                shuju['price'] = recruitment.price
+                shuju['type']
+        data = self.wrap_json_response(data=data, code=ReturnCode.SUCCESS, message='inquiry success.')
+        return JsonResponse(data=data, safe=False)

@@ -60,7 +60,7 @@ class Recruitment(models.Model, tupian):
     )
     type = models.CharField(max_length=20, choices=TYPE, default='工作类型')
     # 求职者——用户
-    user = models.ManyToManyField(Yonghu, blank=True)
+    user = models.ManyToManyField(Yonghu, blank=True, related_name='yonghu')
     # 托管平台
     shangjia = models.ForeignKey(Shangjia, on_delete=models.DO_NOTHING)
     # 招聘信息 创建时间
@@ -69,7 +69,7 @@ class Recruitment(models.Model, tupian):
     is_stop = models.BooleanField(verbose_name='是否结束', default=False)
 
     def __str__(self):
-        return str(self.pk)
+        return str(self.shangjia)
 
 
 

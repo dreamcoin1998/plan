@@ -5,6 +5,7 @@ from api.models import Shangjia, Image
 from evaluation.solve.find_job import get_xinxi, pingfen, chengshi, pay_chinese
 from .models import Recruitment
 from django.contrib.contenttypes.models import ContentType
+from authorization.models import Yonghu
 
 # 排序算法获取所需数据
 def get_sort(shuju):
@@ -216,6 +217,30 @@ class GetXinxi(View, CommonResponseMixin):
         duixiang['name'] = shangjia.name
         duixiang['introduction'] = shangjia.introduction
         duixiang['address'] = shangjia.province + shangjia.city + shangjia.location
+        duixiang['id'] = shangjia.id
 
         data = self.wrap_json_response(data=duixiang, code=ReturnCode.SUCCESS, message='shangjia success.')
         return JsonResponse(data, safe=False)
+
+
+# 用户点击申请
+class apply(View, CommonResponseMixin):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        data = request.body.decode('utf-8')
+        data = eval(data)
+        print(data)
+        try:
+            id = data['id']
+            nickname = data['nickname']
+            re = Recruitment.objects.get(id=id) # 获取相应的Recruitment对象
+            yonghu = Yonghu.objects.get(nickname=nickname)
+            re.user.add(yonghu)
+            re.save()
+            data = self.wrap_json_response(code=ReturnCode.SUCCESS, message='apply success.')
+        except Exception as e:
+            print(e)
+            data = self.wrap_json_response(code=ReturnCode.FAILED, message='apply failed.')
+        return JsonResponse(data=data, safe=False)

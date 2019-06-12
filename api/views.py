@@ -205,33 +205,33 @@ class search(View, CommonResponseMixin):
         inquiry = data['q'] # 获取前端查询词
         # 根据查询词在Shangjia进行不分大小写的查找
         shangjias = Shangjia.objects.filter(name__icontains=inquiry)
+        print(shangjias)
         # 根据查询词在Recruitment的position或description字段进行不区分大小写的查找
         recruitments = Recruitment.objects.filter(Q(position__icontains=inquiry) | Q(description__icontains=inquiry))
+        print(recruitments)
+        print(recruitments!=[])
         data = []
         # 如果查询到的商家信息不为空
-        if shangjias != []:
+        if len(shangjias) > 0:
+            print('执行1')
             for shangjia in shangjias:
                 shuju = {}
-                shuju['name'] = shangjia.name
-                shuju['score'] = shangjia.score
-                shuju['introduction'] = shangjia.introduction
-                shuju['province'] = shangjia.province
-                shuju['city'] = shangjia.city
-                shuju['location'] = shangjia.location
+                for key, value in shangjia.__dict__.items():
+                    shuju[key] = value
+                shuju.pop('_state')
                 shuju['distance'] = shangjia.distance(shangjia.latitude, shangjia.longitude)
                 shuju['type'] = 'shangjia'
                 data.append(shuju)
-        elif recruitments != []:
+        elif len(recruitments) > 0:
+            print('执行')
             for recruitment in recruitments:
+                print(recruitment)
                 shuju = {}
-                shuju['position'] = recruitment.position
-                shuju['description'] = recruitment.description
-                shuju['work_location'] = recruitment.work_location
-                shuju['peo_num'] = recruitment.peo_num
-                shuju['academic'] = recruitment.academic
-                shuju['subject'] = recruitment.subject
-                shuju['pay_method'] = recruitment.pay_method
-                shuju['price'] = recruitment.price
-                shuju['type']
+                for key, value in recruitment.__dict__.items():
+                    shuju[key] = value
+                shuju.pop('_state')
+                shuju['type'] = 'recruitment'
+                data.append(shuju)
         data = self.wrap_json_response(data=data, code=ReturnCode.SUCCESS, message='inquiry success.')
+        print(data)
         return JsonResponse(data=data, safe=False)

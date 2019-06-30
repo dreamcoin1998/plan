@@ -13,6 +13,7 @@ from django.contrib.contenttypes.models import ContentType
 from plan.settings import IMAGES_DIR
 from order.models import Recruitment
 from django.db.models import Q
+from utils.auth import c2s
 
 
 # 处理用户返回的地理位置,后期进行一些推荐商家，筛选等等处理
@@ -107,7 +108,7 @@ class Baby(View, CommonResponseMixin):
         baby.idcard = data['idcard']
         baby.school = data['school']
         baby.school_area = data['school_area']
-        yonghu = Yonghu.objects.get(nickname=data['nickname'])
+        yonghu = Yonghu.objects.get(open_id=c2s(data['appid'], data['code'])['openid'])
         yh = ContentType.objects.get_for_model(Yonghu)
         baby.content_type = yh
         baby.object_id = yonghu.id
@@ -139,8 +140,10 @@ class uploadImage(View, CommonResponseMixin):
 # 获取用户所填写的小孩信息
 class getChild(View, CommonResponseMixin):
     def get(self, request):
-        nickname = request.GET.get('n')
-        yonghu = Yonghu.objects.get(nickname=nickname)
+        code = request.GET.get('code')
+        appId = request.GET.get('appId')
+        open_id = c2s(appId, code)['openid']
+        yonghu = Yonghu.objects.get(open_id=open_id)
         child = yonghu.child.all()
         data = []
         for ch in child:

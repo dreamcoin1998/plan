@@ -8,7 +8,7 @@ class RecruitmentAdmin(admin.ModelAdmin):
 
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ('id', 'server_type', 'charging_method', 'time_num', 'price', 'admission_time', 'is_payment', 'shangjia', 'user', 'phone')
+    list_display = ('id', 'server_type', 'charging_method', 'time_num', 'price', 'admission_time', 'is_payment', 'shangjia', 'user', 'phone', 'user_status')
     ordering = ('id',)
 
 

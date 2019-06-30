@@ -1,7 +1,7 @@
 from django.urls import path, include
 from .views import user_location, ImageView, JobView, Baby, uploadImage, getChild, deleteChild, search
 from authorization.views import UserView, authorization
-from order.views import send_job, GetXinxi, apply
+from order.views import send_job, GetXinxi, apply, GetApplyStatus
 from evaluation.solve.find_order import Tuoguan, Tuoguan_shouye
 
 urlpatterns = [
@@ -18,5 +18,6 @@ urlpatterns = [
     path('getchild', getChild.as_view()),
     path('delete', deleteChild.as_view()),
     path('search', search.as_view()),
-    path('apply', apply.as_view())
+    path('apply', apply.as_view()),
+    path('status', GetApplyStatus.as_view())
 ]

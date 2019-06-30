@@ -244,3 +244,23 @@ class apply(View, CommonResponseMixin):
             print(e)
             data = self.wrap_json_response(code=ReturnCode.FAILED, message='apply failed.')
         return JsonResponse(data=data, safe=False)
+
+
+# 用户获取申请状态
+class GetApplyStatus(View, CommonResponseMixin):
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        data = request.body.decode('utf-8')
+        data = eval(data)
+        id = data['id']
+        nc = data['nc']
+        rec = Recruitment.objects.get(id=id)
+        yonghu = Yonghu.objects.get(nickname=nc)
+        if yonghu in rec.user.all():
+            data = 1
+        else:
+            data = 0
+        data = self.wrap_json_response(data=data, code=ReturnCode.SUCCESS, message='have')
+        return JsonResponse(data=data, safe=False)

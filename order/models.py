@@ -14,6 +14,7 @@ class tupian():
         except exceptions.ObjectDoesNotExist:
             return 0
 
+
 # 招聘信息
 class Recruitment(models.Model, tupian):
     # 工作职位
@@ -59,8 +60,6 @@ class Recruitment(models.Model, tupian):
         ('Part_Time', '兼职')
     )
     type = models.CharField(max_length=20, choices=TYPE, default='工作类型')
-    # 求职者——用户
-    user = models.ManyToManyField(Yonghu, blank=True, related_name='yonghu')
     # 托管平台
     shangjia = models.ForeignKey(Shangjia, on_delete=models.DO_NOTHING)
     # 招聘信息 创建时间
@@ -71,6 +70,12 @@ class Recruitment(models.Model, tupian):
     def __str__(self):
         return str(self.shangjia)
 
+
+# 用户投递状态
+class R_Y_relationship(models.Model):
+    r_id = models.PositiveIntegerField(verbose_name='招聘信息id')
+    y_id = models.PositiveIntegerField(verbose_name='用户id')
+    status = models.CharField(max_length=20, verbose_name='状态')
 
 
 # 订单类型
